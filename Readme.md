@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Семён Гнедин](https://up.htmlacademy.ru/adaptive/28/user/2180175).
-- Наставник: `Неизвестно`.
+- Наставник: `Артём Картавый`.
 
 ---
 
@@ -56,5 +56,3 @@ git clone SSH-адрес_вашего_форка
 
 [check-image]: https://github.com/htmlacademy-adaptive/2180175-sedona-28/workflows/Project%20check/badge.svg?branch=master
 [check-url]: https://github.com/htmlacademy-adaptive/2180175-sedona-28/actions
-
-Артём Картавый
