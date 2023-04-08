@@ -7,27 +7,20 @@
   </head>
   <body class="page__body">
     <div class="page-container">
-      <header class="main-header">
-        <a href="#" class="main-header__logo">
+      <header class="header">
+        <a href="#" class="header__logo">
           <img
-            class="main-header__logo-image"
+            class="header__logo-image"
             src="img/main-logo.svg"
-            width="185px"
-            height="96px"
+            width="185"
+            height="96"
             alt="Логотип Седоны."
           />
         </a>
         <button type="button" class="header__button">
-          <img
-            class="header__button-image"
-            src="img/icon-menu.svg"
-            width="23px"
-            height="22px"
-            alt="Кнопка открытия меню."
-          />
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-nav"></nav>
+        <nav class="header__nav nav"></nav>
       </header>
       <main class="main">
         <section class="main-name">
@@ -41,124 +34,127 @@
             Рассмотрим 5 причин, по которым<br />
             Седона круче, чем гранд каньон!
           </p>
-          <img
-            src="img/white-line.svg"
-            class="main-name__line"
-            width="320"
-            height="37"
-            alt="Белая линия."
-          />
         </section>
-        <section class="real-town">
-          <div class="real-town__block">
-            <h2 class="real-town__title">НАСТОЯЩИЙ ГОРОДОК</h2>
-            <p class="real-town__number">— №1 —</p>
-            <p class="real-town__slogan">
-              СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br />
-              ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
-            </p>
-            <img
-              src="img/first-city.svg"
-              class="real-town__picture"
-              width="320"
-              height="260"
-              alt="Фото города."
-            />
-          </div>
-          <ul class="real-town__list">
-            <li class="real-town__item-image">
+        <section class="advantages">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__block">
+                <h2 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+                <p class="advantages__number">— №1 —</p>
+                <p class="advantages__slogan">
+                  СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br />
+                  ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                </p>
+                <img
+                  src="img/first-city.svg"
+                  class="advantages__picture"
+                  width="320"
+                  height="260"
+                  alt="Фото города."
+                />
+              </div>
+            </li>
+            <li class="advantages__item-list">
+              <ul class="advantages__list-block">
+                <li class="advantages__item-image">
+                  <img
+                    src="img/icon-house.svg"
+                    class="advantages__icon"
+                    width="40"
+                    height="38"
+                    alt="Иконка дома."
+                  />
+                  <h2 class="advantages__list-title">Жилье</h2>
+                </li>
+                <li class="advantages__item-text">
+                  <p class="advantages__description">
+                    Рекомендуем пожить в<br />
+                    настоящем мотеле, все как в<br />
+                    кино!
+                  </p>
+                </li>
+                <li class="advantages__item-image">
+                  <img
+                    src="img/icon-burger.svg"
+                    class="advantages__icon"
+                    width="40"
+                    height="40"
+                    alt="Иконка бургера."
+                  />
+                  <h2 class="advantages__list-title">ЕДА</h2>
+                </li>
+                <li class="advantages__item-text">
+                  <p class="advantages__description">
+                    Всегда заказывайте ФИРМЕННЫЙ<br />
+                    БУРГЕР, Вы НЕ разочаруетесь!
+                  </p>
+                </li>
+                <li class="advantages__item-image">
+                  <img
+                    src="img/icon-gift.svg"
+                    class="advantages__icon"
+                    width="40"
+                    height="40"
+                    alt="Иконка подарка."
+                  />
+                  <h2 class="advantages__list-title">СУВЕНИРЫ</h2>
+                </li>
+                <li class="advantages__item-text">
+                  <p class="advantages__description">
+                    Не только китайского, но и<br />
+                    местного производства!
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__color">
+                <h2 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h2>
+                <p class="advantages__number">— №2 —</p>
+                <p class="advantages__slogan">
+                  Да, по нему можно пройти! Если вы<br />
+                  осмелитесь, конечно
+                </p>
+              </div>
               <img
-                src="img/icon-house.svg"
-                class="real-town__icon"
-                width="40"
-                height="38"
-                alt="Иконка дома."
+                src="img/picture-mountains.svg"
+                class="advantages__picture"
+                width="320"
+                height="260"
+                alt="Фото гор."
               />
-              <h2 class="real-town__list-title">Жилье</h2>
             </li>
-            <li class="real-town__item-text">
-              <p class="real-town__description">
-                Рекомендуем пожить в<br />
-                настоящем мотеле, все как в<br />
-                кино!
-              </p>
+            <li class="advantages__item">
+              <div class="advantages__square">
+                <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                <p class="advantages__number">— №3 —</p>
+                <p class="advantages__slogan">
+                  ВСЕ интересные места находятся<br />
+                  очень близко
+                </p>
+              </div>
             </li>
-            <li class="real-town__item-image">
-              <img
-                src="img/icon-burger.svg"
-                class="real-town__icon"
-                width="40"
-                height="40"
-                alt="Иконка бургера."
-              />
-              <h2 class="real-town__list-title">ЕДА</h2>
+            <li class="advantages__item">
+              <div class="advantages__square">
+                <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
+                <p class="advantages__number">— №4 —</p>
+                <p class="advantages__slogan">
+                  ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br />
+                  совсем НЕ СКУЧНО!
+                </p>
+              </div>
             </li>
-            <li class="real-town__item-text">
-              <p class="real-town__description">
-                Всегда заказывайте ФИРМЕННЫЙ<br />
-                БУРГЕР, Вы НЕ разочаруетесь!
-              </p>
-            </li>
-            <li class="real-town__item-image">
-              <img
-                src="img/icon-gift.svg"
-                class="real-town__icon"
-                width="40"
-                height="40"
-                alt="Иконка подарка."
-              />
-              <h2 class="real-town__list-title">СУВЕНИРЫ</h2>
-            </li>
-            <li class="real-town__item-text">
-              <p class="real-town__description">
-                Не только китайского, но и<br />
-                местного производства!
-              </p>
+            <li class="advantages__item">
+              <div class="advantages__square">
+                <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
+                <p class="advantages__number">— №5 —</p>
+                <p class="advantages__slogan">
+                  большинство едет в гранд каньон<br />
+                  и толпится там
+                </p>
+              </div>
             </li>
           </ul>
-        </section>
-        <section class="bridge-block">
-          <div class="bridge-block__color">
-            <h2 class="bridge-block__title">ТАМ ЕСТЬ Мост дьявола</h2>
-            <p class="bridge-block__number">— №2 —</p>
-            <p class="bridge-block__slogan">
-              Да, по нему можно пройти! Если вы<br />
-              осмелитесь, конечно
-            </p>
-          </div>
-          <img
-            src="img/picture-mountains.svg"
-            class="bridge-block__picture"
-            width="320"
-            height="260"
-            alt="Фото гор."
-          />
-        </section>
-        <section class="advantages-block">
-          <div class="advantages-block__square">
-            <h2 class="advantages-block__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <p class="advantages-block__number">— №3 —</p>
-            <p class="advantages-block__slogan">
-              ВСЕ интересные места находятся<br />
-              очень близко
-            </p>
-          </div>
-          <div class="advantages-block__square">
-            <h2 class="advantages-block__title">КРАСИВАЯ ДОРОГА</h2>
-            <p class="advantages-block__number">— №4 —</p>
-            <p class="advantages-block__slogan">
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br />
-              совсем НЕ СКУЧНО!
-            </p>
-          </div>
-          <div class="advantages-block__square">
-            <h2 class="advantages-block__title">МАЛО ТУРИСТОВ</h2>
-            <p class="advantages-block__number">— №5 —</p>
-            <p class="advantages-block__slogan">
-              большинство едет в гранд каньон<br />
-              и толпится там
-            </p>
-          </div>
         </section>
         <section class="search-block">
           <h2 class="search-block__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
@@ -169,6 +165,7 @@
           </p>
           <button type="button" class="search-block__search-button">
             Найти Гостиницу
+            <span class="visually-hidden">Кнопка для поиска гостиниц.</span>
           </button>
           <img
             src="img/map-mobile.svg"
@@ -180,14 +177,20 @@
         </section>
       </main>
       <footer class="footer">
-        <h2 class="footer__hashtag">#visitSEDONA</h2>
-        <div class="footer__line">
-          <a href="#" class="footer__vk-link"></a>
-          <a href="#" class="footer__telegram-link"></a>
-          <a href="#" class="footer__youtube-link"></a>
-        </div>
+        <a href="#" class="footer__hashtag">#visitSEDONA</a>
+        <ul class="footer__line">
+          <li class="footer__line-item">
+            <a href="#" class="footer__vk-link"></a>
+          </li>
+          <li class="footer__line-item">
+            <a href="#" class="footer__telegram-link"></a>
+          </li>
+          <li class="footer__line-item">
+            <a href="#" class="footer__youtube-link"></a>
+          </li>
+        </ul>
         <div class="footer__logo-block">
-          <p class="footer__text">Разработано</p>
+          <span class="footer__text">Разработано</span>
           <img
             src="img/logo-footer.svg"
             class="footer__htmlacademy-logo"
