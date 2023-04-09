@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page__body">
+    <div class="page-container">
+      <header class="form-header">
+        <div class="form-header__line">
+          <img
+            src="img/main-logo.svg"
+            class="form-header__logo"
+            width="185"
+            height="96"
+            alt="Логотип Седоны."
+          />
+          <button type="button" class="form-header__menu-button"></button>
+        </div>
+        <div class="form-header__background-image"></div>
+      </header>
+      <main class="form-main">
+        <section class="feedback-block">
+          <h1 class="feedback-block__title">Оставьте свой отзыв</h1>
+          <p class="feedback-block__text">
+            Помогите нашим отелям стать лучше!<br />
+            оставьте отзыв о них, а также о<br />
+            посещенных вами<br />
+            достопримечательностях
+          </p>
+        </section>
+        <section class="info-block">
+          <h2 class="visually-hidden">Форма для заполнения данных</h2>
+          <form action="#" class="info-block__form">
+            <fieldset class="info-block__name-fieldset">
+              <legend class="info-block__title">Представьтесь:</legend>
+              <label class="info-block__form-title">ИМЯ*:</label>
+              <input
+                type="text"
+                class="info-block__form-input"
+                placeholder="Пётр"
+              />
+              <label class="info-block__form-title">ФАМИЛИЯ*:</label>
+              <input
+                type="text"
+                class="info-block__form-input"
+                placeholder="Пустота"
+              />
+              <label class="info-block__form-title">Отчество:</label>
+              <input
+                type="text"
+                class="info-block__form-input"
+                placeholder="Викторович"
+              />
+            </fieldset>
+            <fieldset class="info-block__info-fieldset">
+              <legend class="info-block__title">Контактная информация:</legend>
+              <label class="info-block__form-title">Контактный телефон*:</label>
+              <div class="info-block__form-line">
+                <input
+                  type="text"
+                  class="info-block__tel-input"
+                  placeholder="Введите телефон"
+                />
+                <div class="info-block__background-image"></div>
+              </div>
+              <label class="info-block__form-title">Электронная почта*:</label>
+              <div class="info-block__form-line">
+                <input
+                  type="email"
+                  class="info-block__email-input"
+                  placeholder="Введите e-mail"
+                />
+                <div class="info-block__background-image-second"></div>
+              </div>
+            </fieldset>
+            <fieldset class="info-block__emotion-fieldset">
+              <legend class="info-block__title">ВАше Общее впечатление:</legend>
+              <div class="info-block__line">
+                <input type="radio" class="info-block__radio-button" checked />
+                <label class="info-block__text">Скорее положительное</label>
+              </div>
+              <div class="info-block__line">
+                <input type="radio" />
+                <label class="info-block__text">Скорее отрицательное</label>
+              </div>
+              <div class="info-block__line">
+                <input type="radio" />
+                <label class="info-block__text">Затрудняюсь ответить</label>
+              </div>
+            </fieldset>
+            <fieldset class="attractions-fieldset">
+              <legend class="info-block__title">
+                посещенные<br />
+                достопримечательности:
+              </legend>
+              <div class="info-block__attractions-line">
+                <input type="checkbox" class="info-block__checkbox" checked />
+                <label class="info-block__text">Мост Дьявола</label>
+              </div>
+              <div class="info-block__attractions-line">
+                <input type="checkbox" class="info-block__checkbox" checked />
+                <label class="info-block__text">Гора-Колокол</label>
+              </div>
+              <div class="info-block__attractions-line">
+                <input type="checkbox" class="info-block__checkbox" checked />
+                <label class="info-block__text">Слайд-парк</label>
+              </div>
+              <div class="info-block__attractions-line">
+                <input type="checkbox" class="info-block__checkbox" />
+                <label class="info-block__text">Красные скалы</label>
+              </div>
+            </fieldset>
+            <fieldset class="info-block__emotion-fieldset">
+              <legend class="info-block__title">Опишите свои эмоции:</legend>
+              <textarea
+                class="info-block__textarea-feedback"
+                name="emotions-feedback"
+                rows="5"
+                placeholder="Опишите подробно все свои восторги "
+              ></textarea>
+              <button type="button" class="info-block__feedback-button">
+                ОТПРАВИТЬ ОТЗЫВ
+              </button>
+              <label class="info-block__necessary-fields">
+                * — обязательные поля
+              </label>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="#" class="footer__hashtag">#visitSEDONA</a>
+        <ul class="footer__line">
+          <li class="footer__line-item">
+            <a href="#" class="footer__line-social-vk"></a>
+          </li>
+          <li class="footer__line-item">
+            <a href="#" class="footer__line-social-telegram"></a>
+          </li>
+          <li class="footer__line-item">
+            <a href="#" class="footer__line-social-youtube"></a>
+          </li>
+        </ul>
+        <div class="footer__logo-block">
+          <span class="footer__logo-text">Разработано</span>
+          <img
+            src="img/logo-footer.svg"
+            class="footer__htmlacademy-logo"
+            width="29"
+            height="35"
+            alt="Логотип
+          htmlacademy."
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
