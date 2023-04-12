@@ -7,18 +7,27 @@
   </head>
   <body class="page__body">
     <div class="page-container">
-      <header class="form-header">
-        <div class="form-header__line">
+      <header class="header">
+        <a href="#" class="header__logo">
           <img
+            class="header__logo-image"
             src="img/main-logo.svg"
-            class="form-header__logo"
             width="185"
             height="96"
             alt="Логотип Седоны."
           />
-          <button type="button" class="form-header__menu-button"></button>
-        </div>
-        <div class="form-header__background-image"></div>
+        </a>
+        <button type="button" class="header__button">
+          <img
+            src="img/icon-menu.svg"
+            class="header__button-image"
+            alt="Меню"
+            width="23"
+            height="22"
+          />
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="header__nav nav"></nav>
       </header>
       <main class="form-main">
         <section class="feedback-block">
@@ -78,15 +87,30 @@
             <fieldset class="info-block__emotion-fieldset">
               <legend class="info-block__title">ВАше Общее впечатление:</legend>
               <div class="info-block__line">
-                <input type="radio" class="info-block__radio-button" checked />
+                <input
+                  type="radio"
+                  class="visually-hidden info-block__radio-button"
+                  checked
+                />
+                <span class="info-block__circle"></span>
                 <label class="info-block__text">Скорее положительное</label>
               </div>
               <div class="info-block__line">
-                <input type="radio" />
+                <input
+                  type="radio"
+                  class="visually-hidden info-block__radio-button"
+                  checked
+                />
+                <span class="info-block__circle-passive"></span>
                 <label class="info-block__text">Скорее отрицательное</label>
               </div>
               <div class="info-block__line">
-                <input type="radio" />
+                <input
+                  type="radio"
+                  class="visually-hidden info-block__radio-button"
+                  checked
+                />
+                <span class="info-block__circle-passive-second"></span>
                 <label class="info-block__text">Затрудняюсь ответить</label>
               </div>
             </fieldset>
@@ -96,20 +120,39 @@
                 достопримечательности:
               </legend>
               <div class="info-block__attractions-line">
-                <input type="checkbox" class="info-block__checkbox" checked />
-                <label class="info-block__text">Мост Дьявола</label>
+                <input
+                  type="checkbox"
+                  class="visually-hidden info-block__checkbox"
+                  checked
+                />
+                <span class="info-block__checkbox-box"></span>
+                <p class="info-block__text-checkbox">Мост Дьявола</p>
               </div>
               <div class="info-block__attractions-line">
-                <input type="checkbox" class="info-block__checkbox" checked />
-                <label class="info-block__text">Гора-Колокол</label>
+                <input
+                  type="checkbox"
+                  class="visually-hidden info-block__checkbox"
+                  checked
+                />
+                <span class="info-block__checkbox-box-second"></span>
+                <p class="info-block__text-checkbox">Гора-Колокол</p>
               </div>
               <div class="info-block__attractions-line">
-                <input type="checkbox" class="info-block__checkbox" checked />
-                <label class="info-block__text">Слайд-парк</label>
+                <input
+                  type="checkbox"
+                  class="visually-hidden info-block__checkbox"
+                  checked
+                />
+                <span class="info-block__checkbox-box-third"></span>
+                <p class="info-block__text-checkbox">Слайд-парк</p>
               </div>
               <div class="info-block__attractions-line">
-                <input type="checkbox" class="info-block__checkbox" />
-                <label class="info-block__text">Красные скалы</label>
+                <input
+                  type="checkbox"
+                  class="visually-hidden info-block__checkbox"
+                />
+                <span class="info-block__checkbox-box-foufth"></span>
+                <p class="info-block__text-checkbox">Красные скалы</p>
               </div>
             </fieldset>
             <fieldset class="info-block__emotion-fieldset">
@@ -123,9 +166,7 @@
               <button type="button" class="info-block__feedback-button">
                 ОТПРАВИТЬ ОТЗЫВ
               </button>
-              <label class="info-block__necessary-fields">
-                * — обязательные поля
-              </label>
+              <p class="info-block__necessary-fields">* — обязательные поля</p>
             </fieldset>
           </form>
         </section>
@@ -134,17 +175,41 @@
         <a href="#" class="footer__hashtag">#visitSEDONA</a>
         <ul class="footer__line">
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-vk"></a>
+            <a href="#" class="footer__line-social">
+              <img
+                src="img/vk-icon.svg"
+                class="footer__social-icon"
+                width="24px"
+                height="24px"
+                alt="Логотип социальной сети - Вконтакте"
+              />
+            </a>
           </li>
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-telegram"></a>
+            <a href="#" class="footer__line-social">
+              <img
+                src="img/telegram-icon.svg"
+                class="footer__social-icon"
+                width="24px"
+                height="24px"
+                alt="Логотип социальной сети - Телеграм"
+              />
+            </a>
           </li>
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-youtube"></a>
+            <a href="#" class="footer__line-social">
+              <img
+                src="img/youtube-icon.svg"
+                class="footer__social-icon"
+                width="24px"
+                height="24px"
+                alt="Логотип видеохостинга - Ютуб"
+              />
+            </a>
           </li>
         </ul>
         <div class="footer__logo-block">
-          <span class="footer__logo-text">Разработано</span>
+          <p class="footer__logo-text">Разработано</p>
           <img
             src="img/logo-footer.svg"
             class="footer__htmlacademy-logo"

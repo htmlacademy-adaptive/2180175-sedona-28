@@ -7,18 +7,27 @@
   </head>
   <body class="page__body">
     <div class="page-container">
-      <header class="form-header">
-        <div class="form-header__line">
+      <header class="header">
+        <a href="#" class="header__logo">
           <img
+            class="header__logo-image"
             src="img/main-logo.svg"
-            class="form-header__logo"
             width="185"
             height="96"
             alt="Логотип Седоны."
           />
-          <button type="button" class="form-header__menu-button"></button>
-        </div>
-        <div class="form-header__background-image"></div>
+        </a>
+        <button type="button" class="header__button">
+          <img
+            src="img/icon-menu.svg"
+            class="header__button-image"
+            alt="Меню"
+            width="23"
+            height="22"
+          />
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="header__nav nav"></nav>
       </header>
       <main class="catalog-main">
         <section class="photo-block">
@@ -42,6 +51,13 @@
               <h2 class="photo-block__list-title">неродные просторы</h2>
               <p class="photo-block__list-text">Автор фото: Борис</p>
               <button type="button" class="photo-block__list-button">
+                <img
+                  src="img/like-icon.svg"
+                  class="photo-block__like-icon"
+                  width="23"
+                  height="21"
+                  alt="Иконка лайка"
+                />
                 <span class="photo-block__like-counter">1350</span>
               </button>
             </li>
@@ -56,6 +72,13 @@
               <h2 class="photo-block__list-title">Местная растительность</h2>
               <p class="photo-block__list-text">Автор фото: Сергей</p>
               <button type="button" class="photo-block__list-button">
+                <img
+                  src="img/like-icon.svg"
+                  class="photo-block__like-icon"
+                  width="23"
+                  height="21"
+                  alt="Иконка лайка"
+                />
                 <span class="photo-block__like-counter">143</span>
               </button>
             </li>
@@ -70,6 +93,13 @@
               <h2 class="photo-block__list-title">Дорога на север</h2>
               <p class="photo-block__list-text">Автор фото: Петр</p>
               <button type="button" class="photo-block__list-button">
+                <img
+                  src="img/like-icon.svg"
+                  class="photo-block__like-icon"
+                  width="23"
+                  height="21"
+                  alt="Иконка лайка"
+                />
                 <span class="photo-block__like-counter">96</span>
               </button>
             </li>
@@ -84,6 +114,13 @@
               <h2 class="photo-block__list-title">Мост дьявола</h2>
               <p class="photo-block__list-text">Автор фото: Антон</p>
               <button type="button" class="photo-block__list-button">
+                <img
+                  src="img/like-icon.svg"
+                  class="photo-block__like-icon"
+                  width="23"
+                  height="21"
+                  alt="Иконка лайка"
+                />
                 <span class="photo-block__like-counter">254</span>
               </button>
             </li>
@@ -96,24 +133,56 @@
             скорее за билетами, пока они не<br />
             подорожали в очередной раз!
           </p>
-          <div class="demonstration-block__video"></div>
+          <div class="demonstration-block__video">
+            <img
+              src="img/play-icon.svg"
+              class="demonstration-block__play-icon"
+              width="48"
+              height="54"
+              alt="Иконка play"
+            />
+          </div>
         </section>
       </main>
       <footer class="footer">
         <a href="#" class="footer__hashtag">#visitSEDONA</a>
         <ul class="footer__line">
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-vk"></a>
+            <a href="#" class="footer__line-social">
+              <img
+                src="img/vk-icon.svg"
+                class="footer__social-icon"
+                width="24px"
+                height="24px"
+                alt="Логотип социальной сети - Вконтакте"
+              />
+            </a>
           </li>
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-telegram"></a>
+            <a href="#" class="footer__line-social">
+              <img
+                src="img/telegram-icon.svg"
+                class="footer__social-icon"
+                width="24px"
+                height="24px"
+                alt="Логотип социальной сети - Телеграм"
+              />
+            </a>
           </li>
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-youtube"></a>
+            <a href="#" class="footer__line-social">
+              <img
+                src="img/youtube-icon.svg"
+                class="footer__social-icon"
+                width="24px"
+                height="24px"
+                alt="Логотип видеохостинга - Ютуб"
+              />
+            </a>
           </li>
         </ul>
         <div class="footer__logo-block">
-          <span class="footer__logo-text">Разработано</span>
+          <p class="footer__logo-text">Разработано</p>
           <img
             src="img/logo-footer.svg"
             class="footer__htmlacademy-logo"
