@@ -3,7 +3,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 31px 0 26px 20px;
   width: 280px;
   text-align: center;
 }
@@ -16,11 +16,11 @@
 
 .photo-block__list {
   list-style: none;
-  padding: 0;
+  padding: 31px 0 0 20px;
 }
 
 .photo-block__picture {
-  margin-bottom: 15px;
+  margin: 23px 0 10px 0;
 }
 
 .photo-block__list-title {
@@ -33,6 +33,7 @@
 
 .photo-block__list-text {
   color: #333333;
+  margin: 0 0 0 0;
 }
 
 .photo-block__list-button {
@@ -45,8 +46,24 @@
   background-color: #ffffff;
   border: none;
   padding: 0;
+  margin: 11px 0 25px 0;
 }
 
 .photo-block__like-counter {
-  margin-left: 12px;
+  margin-left: 11px;
+}
+
+.photo-block__item {
+  position: relative;
+  margin: 0 0 1px 0;
+}
+
+.photo-block__item::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 284px;
+  height: 1px;
+  background-color: #d6d6d6;
+  bottom: 0;
 }
