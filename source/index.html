@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="vieport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
     <div class="page-container">
@@ -27,7 +28,13 @@
           />
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="header__nav nav"></nav>
+        <nav class="header__nav">
+          <button type="button" class="header__nav-button"></button>
+          <a href="index.html" class="header__nav-link"> Главная </a>
+          <a href="catalog.html" class="header__nav-link"> Фото и видео </a>
+          <a href="form.html" class="header__nav-link"> Форма Отзыва </a>
+          <a href="#" class="header__nav-link-last"> HTML ACADEMY </a>
+        </nav>
       </header>
       <main class="main">
         <section class="main-name">
@@ -160,37 +167,21 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <mask
-                id="mask0_29492_885"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="320"
-                height="57"
-              >
-                <rect width="320" height="57" fill="#C4C4C4" />
-              </mask>
-              <g mask="url(#mask0_29492_885)">
-                <path
-                  d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
-                  fill="white"
-                />
-                <path
-                  d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
-                  fill="white"
-                />
-              </g>
+              <path
+                d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
+                fill="white"
+              />
+              <path
+                d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
+                fill="white"
+              />
             </svg>
           </div>
           <h1 class="main-name__title">
-            СЕДОНА — небольшой<br />
-            городок в АРИЗОНЕ,<br />
-            зАСЛУЖИвающий большего!
+            СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
           </h1>
           <p class="main-name__reason">
-            Рассмотрим 5 причин, по которым<br />
-            Седона круче, чем гранд каньон!
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </section>
         <section class="advantages">
@@ -201,8 +192,7 @@
                 <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <span class="advantages__number">— №1 —</span>
                 <p class="advantages__slogan">
-                  СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br />
-                  ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                  СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                 </p>
               </div>
               <img
@@ -270,8 +260,6 @@
                   </svg>
 
                   <h2 class="advantages__list-title">Жилье</h2>
-                </li>
-                <li class="advantages__item-text">
                   <p class="advantages__description">
                     Рекомендуем пожить в<br />
                     настоящем мотеле, все как в<br />
@@ -313,8 +301,6 @@
                   </svg>
 
                   <h2 class="advantages__list-title">ЕДА</h2>
-                </li>
-                <li class="advantages__item-text">
                   <p class="advantages__description">
                     Всегда заказывайте ФИРМЕННЫЙ<br />
                     БУРГЕР, Вы НЕ разочаруетесь!
@@ -335,8 +321,6 @@
                   </svg>
 
                   <h2 class="advantages__list-title">СУВЕНИРЫ</h2>
-                </li>
-                <li class="advantages__item-text">
                   <p class="advantages__description-last">
                     Не только китайского, но и<br />
                     местного производства!
@@ -361,43 +345,41 @@
                 alt="Фото гор."
               />
             </li>
-            <li class="advantages__item-color">
-              <div class="advantages__square">
-                <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-                <span class="advantages__number">— №3 —</span>
-                <p class="advantages__slogan-line">
-                  ВСЕ интересные места находятся<br />
-                  очень близко
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item-color">
-              <div class="advantages__square">
-                <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
-                <span class="advantages__number">— №4 —</span>
-                <p class="advantages__slogan-line">
-                  ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА<br />
-                  совсем НЕ СКУЧНО!
-                </p>
-              </div>
-            </li>
-            <li class="advantages__item-color-last">
-              <div class="advantages__square">
-                <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
-                <span class="advantages__number">— №5 —</span>
-                <p class="advantages__slogan">
-                  большинство едет в гранд каньон<br />
-                  и толпится там
-                </p>
-              </div>
-            </li>
+            <ul class="advantages__list-color">
+              <li class="advantages__item-color">
+                <div class="advantages__square">
+                  <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                  <span class="advantages__number">— №3 —</span>
+                  <p class="advantages__slogan-line">
+                    ВСЕ интересные места находятся очень близко
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item-color">
+                <div class="advantages__square">
+                  <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
+                  <span class="advantages__number">— №4 —</span>
+                  <p class="advantages__slogan-line">
+                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item-color-last">
+                <div class="advantages__square">
+                  <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
+                  <span class="advantages__number">— №5 —</span>
+                  <p class="advantages__slogan">
+                    большинство едет в гранд каньон и толпится там
+                  </p>
+                </div>
+              </li>
+            </ul>
           </ul>
         </section>
         <section class="search-block">
           <h2 class="search-block__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="search-block__text">
-            Укажите предполагаемые даты<br />
-            поездки, и мы покажем вам лучшие<br />
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
             предложения гостиниц в седоне
           </p>
           <a href="catalog.html" class="search-block__search-button">

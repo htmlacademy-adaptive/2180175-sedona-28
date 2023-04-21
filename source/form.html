@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="vieport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
     <div class="page-container">
@@ -27,7 +28,13 @@
           />
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="header__nav nav"></nav>
+        <nav class="header__nav">
+          <button type="button" class="header__nav-button"></button>
+          <a href="index.html" class="header__nav-link"> Главная </a>
+          <a href="catalog.html" class="header__nav-link"> Фото и видео </a>
+          <a href="form.html" class="header__nav-link"> Форма Отзыва </a>
+          <a href="#" class="header__nav-link-last"> HTML ACADEMY </a>
+        </nav>
       </header>
       <main class="form-main">
         <section class="feedback-block">
@@ -52,35 +59,20 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <mask
-                id="mask0_29492_885"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="320"
-                height="57"
-              >
-                <rect width="320" height="57" fill="#C4C4C4" />
-              </mask>
-              <g mask="url(#mask0_29492_885)">
-                <path
-                  d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
-                  fill="white"
-                />
-                <path
-                  d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
-                  fill="white"
-                />
-              </g>
+              <path
+                d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
+                fill="white"
+              />
+              <path
+                d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
+                fill="white"
+              />
             </svg>
           </div>
           <h1 class="feedback-block__title">Оставьте свой отзыв</h1>
           <p class="feedback-block__text">
-            Помогите нашим отелям стать лучше!<br />
-            оставьте отзыв о них, а также о<br />
-            посещенных вами<br />
-            достопримечательностях
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
           </p>
         </section>
         <section class="info-block">
@@ -178,48 +170,48 @@
                 <li class="info-block__filter-item">
                   <label class="info-block__control">
                     <input
-                      class="visually-hidden info-block__control-input"
+                      class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
                     />
-                    <span class="info-block__control-mark"></span>
+                    <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item">
                   <label class="info-block__control">
                     <input
-                      class="visually-hidden info-block__control-input"
+                      class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
                     />
-                    <span class="info-block__control-mark"></span>
+                    <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item">
                   <label class="info-block__control">
                     <input
-                      class="visually-hidden info-block__control-input"
+                      class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
                     />
-                    <span class="info-block__control-mark"></span>
+                    <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item">
                   <label class="info-block__control">
                     <input
-                      class="visually-hidden info-block__control-input"
+                      class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
                     />
-                    <span class="info-block__control-mark"></span>
+                    <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Красные скалы</span>
                   </label>
                 </li>

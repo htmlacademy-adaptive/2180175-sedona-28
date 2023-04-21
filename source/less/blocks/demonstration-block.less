@@ -2,6 +2,13 @@
   padding: 4px 0 0 0;
 }
 
+@media (min-width: @tablet-width) {
+  .demonstration-block__title-block {
+    width: 445px;
+    min-height: 113px;
+  }
+}
+
 .demonstration-block__title {
   font-weight: 700;
   font-size: 18px;
@@ -11,11 +18,33 @@
   margin: 0 0 28px 0;
 }
 
+@media (min-width: @tablet-width) {
+  .demonstration-block__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 28px 0;
+  }
+}
+
 .demonstration-block__text {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
   margin: 0 0 36px 0;
+  width: 266px;
+}
+
+@media (min-width: @tablet-width) {
+  .demonstration-block__text {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 0 36px 0;
+    width: 445px;
+  }
 }
 
 .demonstration-block__video {

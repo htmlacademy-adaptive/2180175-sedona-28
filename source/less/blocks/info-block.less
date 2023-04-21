@@ -229,31 +229,3 @@
     content: "";
   }
 }
-/* Checkbox */
-.info-block__control-input[type="checkbox"]:checked {
-  & + .info-block__control-mark::before {
-    .info-block__control-input[type="checkbox"]:checked {
-      & + .info-block__control-mark::after {
-        position: absolute;
-        top: 7px;
-        left: 2px;
-        width: 12px;
-        height: 2px;
-        background-color: #242424;
-        content: "";
-      }
-    }
-  }
-}
-
-.info-block__control-input[type="checkbox"]:checked {
-  & + .info-block__control-mark::before {
-    transform: rotate(45deg);
-  }
-}
-
-.info-block__control-input[type="checkbox"]:checked {
-  & + .info-block__control-mark::after {
-    transform: rotate(-45deg);
-  }
-}

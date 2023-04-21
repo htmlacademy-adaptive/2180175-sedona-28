@@ -3,10 +3,30 @@
   padding: 21px 18px 18px 18px;
 }
 
+@media (min-width: @tablet-width) {
+  .advantages__list-block {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .advantages__list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 7px 0 17px 7px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+    width: 105px;
+  }
 }
