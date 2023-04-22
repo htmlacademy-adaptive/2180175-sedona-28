@@ -110,8 +110,8 @@
 .advantages__slogan-line {
   position: relative;
   text-transform: uppercase;
-  width: 237px;
-  margin: 0;
+  width: 246px;
+  margin: 0 0 0 18px;
   text-align: center;
 }
 
@@ -203,6 +203,7 @@
 
 .advantages__item-image {
   display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: @tablet-width) {
@@ -210,6 +211,7 @@
     display: block;
     width: 256px;
     min-height: 331px;
+    padding: 60px 33px;
   }
 }
 
@@ -228,6 +230,8 @@
     text-transform: uppercase;
     color: #333333;
     margin: 0 0 0 0;
+    width: 178px;
+    text-align: center;
   }
 }
 
@@ -242,9 +246,20 @@
     text-transform: uppercase;
     color: #333333;
     margin: 0 0 0 0;
+    width: 183px;
+    text-align: center;
   }
 }
 
 .advantages__picture {
   margin: 0 0 -2px 0;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__picture {
+    width: 512px;
+    height: 256px;
+    object-fit: cover;
+  }
 }
