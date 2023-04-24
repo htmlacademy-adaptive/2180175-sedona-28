@@ -10,37 +10,10 @@
 }
 
 .info-block__control-checkbox[type="checkbox"]:checked {
-  & + .info-block__control-mark-checkbox::before {
-    position: absolute;
-    top: 7px;
-    left: 2px;
-    width: 12px;
-    height: 2px;
-    background-color: #242424;
-    content: "";
-  }
-}
-
-.info-block__control-checkbox[type="checkbox"]:checked {
-  & + .info-block__control-mark-checkbox::before {
-    transform: rotate(45deg);
-  }
-}
-
-.info-block__control-checkbox[type="checkbox"]:checked {
-  & + .info-block__control-mark-checkbox::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.info-block__control-checkbox[type="checkbox"]:checked {
-  & + .info-block__control-mark-checkbox::after {
-    position: absolute;
-    top: 7px;
-    left: 2px;
-    width: 12px;
-    height: 2px;
-    background-color: #242424;
+  & + .info-block__control-mark-checkbox {
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
     content: "";
   }
 }

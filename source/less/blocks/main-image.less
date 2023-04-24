@@ -7,10 +7,29 @@
   margin: 0 0 34px 0;
 }
 
+@media (min-width: @tablet-width) {
+  .main__index-image {
+    position: relative;
+    height: 518px;
+    background-image: url("../../img/background-index-tablet.jpg");
+    background-repeat: no-repeat;
+    padding: 77px 154px 91px 153px;
+    margin: 0 0 49px 0;
+  }
+}
+
 .main__image-line {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -137%;
+  bottom: -1px;
+}
+
+@media (min-width: @tablet-width) {
+  .main__image-line {
+    position: absolute;
+    left: -28%;
+    bottom: -1px;
+  }
 }
 
 .main__background-image {

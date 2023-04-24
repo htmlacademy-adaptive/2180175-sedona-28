@@ -169,19 +169,19 @@
               />
             </svg>
             <svg
-              width="320"
+              width="1200"
               height="57"
               class="main__image-line"
-              viewBox="0 0 320 57"
+              viewBox="0 0 1200 57"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
+                d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z"
                 fill="white"
               />
               <path
-                d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
+                d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z"
                 fill="white"
               />
             </svg>
@@ -314,7 +314,8 @@
                   <h2 class="advantages__list-title">ЕДА</h2>
                   <p class="advantages__description">
                     Всегда заказывайте ФИРМЕННЫЙ<br class="advantages__br" />
-                    БУРГЕР, Вы НЕ разочаруетесь!
+                    БУРГЕР, <br class="advantages__br-line" />
+                    Вы НЕ разочаруетесь!
                   </p>
                 </li>
                 <li class="advantages__item-image">
@@ -333,7 +334,7 @@
                   </svg>
 
                   <h2 class="advantages__list-title">СУВЕНИРЫ</h2>
-                  <p class="advantages__description-last">
+                  <p class="advantages__description">
                     Не только китайского, но и<br class="advantages__br" />
                     местного производства!
                   </p>
@@ -372,7 +373,10 @@
                   <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
                   <span class="advantages__number">— №4 —</span>
                   <p class="advantages__slogan-line">
-                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br
+                      class="advantages__br-line"
+                    />
+                    НЕ СКУЧНО!
                   </p>
                 </div>
               </li>
@@ -397,13 +401,16 @@
           <a href="catalog.html" class="search-block__search-button">
             Найти Гостиницу
           </a>
-          <img
-            src="img/map-mobile.svg"
-            class="search-block__image"
-            width="320"
-            height="350"
-            alt="Карта Аризоны."
-          />
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" />
+            <img
+              src="img/map-mobile.svg"
+              class="search-block__image"
+              width="320"
+              height="350"
+              alt="Карта Аризоны."
+            />
+          </picture>
         </section>
       </main>
       <footer class="footer">
