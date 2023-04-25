@@ -14,10 +14,8 @@
   margin: 31px 0 26px 20px;
   width: 280px;
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .photo-block__title {
+  @media (min-width: @tablet-width) {
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
@@ -33,10 +31,8 @@
   text-align: center;
   margin: 0;
   width: 280px;
-}
 
-@media (min-width: @tablet-width) {
-  .photo-block__text {
+  @media (min-width: @tablet-width) {
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -44,77 +40,16 @@
   }
 }
 
-.photo-block__list {
-  list-style: none;
-  padding: 31px 0 0 20px;
-}
-
 .photo-block__picture {
   margin: 23px 0 10px 0;
-}
-
-.photo-block__list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.photo-block__list-text {
-  color: #333333;
-  margin: 0 0 0 0;
-}
-
-.photo-block__list-button {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  border: none;
-  padding: 0;
-  margin: 11px 0 25px 0;
 }
 
 .photo-block__like-counter {
   margin-left: 11px;
 }
 
-.photo-block__item {
-  position: relative;
-  margin: 0 0 1px 0;
-}
-
 @media (min-width: @tablet-width) {
   .photo-block__line {
     display: flex;
-  }
-}
-
-.photo-block__line-block {
-}
-
-.photo-block__item::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 284px;
-  height: 1px;
-  background-color: #d6d6d6;
-  bottom: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .photo-block__item::after {
-    position: absolute;
-    display: none;
-    content: "";
-    width: 284px;
-    height: 1px;
-    background-color: #d6d6d6;
-    bottom: 0;
   }
 }

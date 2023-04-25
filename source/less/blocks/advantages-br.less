@@ -2,14 +2,44 @@
   .advantages__br {
     display: none;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .advantages__br-line {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__br-line {
+.advantages__br-deskstop {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__slogan-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
     display: block;
   }
 }

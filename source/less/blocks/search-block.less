@@ -5,16 +5,18 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 20px 0;
-}
 
-@media (min-width: @tablet-width) {
-  .search-block__title {
+  @media (min-width: @tablet-width) {
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 34px 0;
   }
 }
 
@@ -24,10 +26,8 @@
   text-align: center;
   margin: 0 0 32px 29px;
   width: 262px;
-}
 
-@media (min-width: @tablet-width) {
-  .search-block__text {
+  @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -55,10 +55,8 @@
   margin: 0 0 47px 18px;
   text-decoration: none;
   padding-top: 15px;
-}
 
-@media (min-width: @tablet-width) {
-  .search-block__search-button {
+  @media (min-width: @tablet-width) {
     display: block;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
@@ -75,14 +73,16 @@
     text-decoration: none;
     padding-top: 15px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 66px 371px;
+  }
 }
 
 .search-block__br {
   display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .search-block__br {
+  @media (min-width: @tablet-width) {
     display: block;
   }
 }

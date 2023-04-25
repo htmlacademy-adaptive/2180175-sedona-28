@@ -51,6 +51,7 @@
             <svg
               width="282"
               height="214"
+              class="main__name-image"
               viewBox="0 0 282 214"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -204,13 +205,23 @@
                   СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                 </p>
               </div>
-              <img
-                src="img/first-city.svg"
-                class="advantages__picture"
-                width="320"
-                height="260"
-                alt="Фото города."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/first-city-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/first-city-tablet.jpg"
+                />
+                <img
+                  src="img/first-city.jpg"
+                  class="advantages__picture"
+                  width="320"
+                  height="260"
+                  alt="Фото города."
+                />
+              </picture>
             </li>
             <li class="advantages__item-list">
               <ul class="advantages__list-block">
@@ -218,7 +229,7 @@
                   <svg
                     width="40"
                     height="38"
-                    class="advantages__item-svg"
+                    class="advantages__item-house"
                     viewBox="0 0 40 38"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +291,7 @@
                   <svg
                     width="40"
                     height="40"
-                    class="advantages__item-svg"
+                    class="advantages__item-burger"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -322,7 +333,7 @@
                   <svg
                     width="40"
                     height="40"
-                    class="advantages__item-svg"
+                    class="advantages__item-gift"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +346,8 @@
 
                   <h2 class="advantages__list-title">СУВЕНИРЫ</h2>
                   <p class="advantages__description">
-                    Не только китайского, но и<br class="advantages__br" />
+                    Не только китайского, <br class="advantages__br-deskstop" />
+                    но и<br class="advantages__br" />
                     местного производства!
                   </p>
                 </li>
@@ -346,17 +358,28 @@
                 <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
                 <span class="advantages__number">— №2 —</span>
                 <p class="advantages__slogan">
-                  Да, по нему можно пройти! Если вы<br />
+                  Да, по нему можно пройти! <br class="advantages__slogan-br" />
+                  Если вы<br class="advantages__br-line" />
                   осмелитесь, конечно
                 </p>
               </div>
-              <img
-                src="img/picture-mountains.svg"
-                class="advantages__picture"
-                width="320"
-                height="260"
-                alt="Фото гор."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/picture-mountains-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/picture-mountains-tablet.jpg"
+                />
+                <img
+                  src="img/picture-mountains.jpg"
+                  class="advantages__picture"
+                  width="320"
+                  height="260"
+                  alt="Фото гор."
+                />
+              </picture>
             </li>
             <ul class="advantages__list-color">
               <li class="advantages__item-color">
@@ -402,6 +425,7 @@
             Найти Гостиницу
           </a>
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg" />
             <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" />
             <img
               src="img/map-mobile.svg"

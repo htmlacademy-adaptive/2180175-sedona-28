@@ -1,53 +1,7 @@
-.advantages__list {
-  list-style: none;
-  padding: 0;
-}
-
 @media (min-width: @tablet-width) {
   .advantages__item {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.advantages__block-line {
-  width: 320px;
-  min-height: 211px;
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding: 70px 18px 40px 18px;
-  background-image: url("../../img/white-blue.svg");
-  background-repeat: no-repeat;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__block-line {
-    width: 256px;
-    min-height: 256px;
-    background-color: #81b3d2;
-    color: #ffffff;
-    padding: 52px 33px 31px 33px;
-    background-image: none;
-    background-repeat: no-repeat;
-  }
-}
-
-.advantages__block {
-  width: 320px;
-  min-height: 191px;
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding: 38px 18px 12px 18px;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__block {
-    width: 256px;
-    min-height: 256px;
-    background-color: #81b3d2;
-    color: #ffffff;
-    padding: 52px 33px 31px 33px;
-    order: 1;
   }
 }
 
@@ -59,10 +13,8 @@
   text-align: center;
   margin: 0 0 11px 0;
   width: 284px;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__title {
+  @media (min-width: @tablet-width) {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -70,6 +22,10 @@
     text-align: center;
     margin: 0 0 13px 19px;
     width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 14px 76px;
   }
 }
 
@@ -79,15 +35,17 @@
   justify-content: center;
   margin: 0 0 17px 0;
   width: 284px;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__number {
+  @media (min-width: @tablet-width) {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     margin: 0 0 23px 0;
     width: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 23px 55px;
   }
 }
 
@@ -96,14 +54,17 @@
   width: 282px;
   margin: 0;
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__slogan {
+  @media (min-width: @tablet-width) {
     text-transform: uppercase;
     width: 190px;
     margin: 0;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+    margin: 0 0 0 5px;
   }
 }
 
@@ -113,6 +74,28 @@
   width: 246px;
   margin: 0 0 0 18px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    text-transform: uppercase;
+    width: 190px;
+    margin: 0;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      display: none;
+      content: "";
+      width: 284px;
+      height: 1px;
+      background-color: #d6d6d6;
+      top: 155%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -125,35 +108,13 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__slogan-line {
+@media (min-width: @desktop-width) {
+  .advantages__item-color:nth-child(2) .advantages__slogan-line {
     position: relative;
     text-transform: uppercase;
-    width: 190px;
-    margin: 0;
+    width: 275px;
+    margin: 0 0 0 12px;
     text-align: center;
-  }
-}
-
-.advantages__slogan-line::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 284px;
-  height: 1px;
-  background-color: #d6d6d6;
-  top: 155%;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__slogan-line::after {
-    position: absolute;
-    display: none;
-    content: "";
-    width: 284px;
-    height: 1px;
-    background-color: #d6d6d6;
-    top: 155%;
   }
 }
 
@@ -164,32 +125,22 @@
   background-color: #d6d6d6;
 }
 
-.advantages__list-color {
-  list-style: none;
-  padding: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__list-color {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 60px 0;
-  }
-}
-
 .advantages__item-color {
   padding: 25px 18px 28px 18px;
   min-height: 141px;
   background-color: #eeeeee;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__item-color {
+  @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
-    padding: 41px 33px 43px 33px;
+    padding: 40px 33px 43px 33px;
+    background-color: #eeeeee;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    min-height: 256px;
+    padding: 52px 50px;
     background-color: #eeeeee;
   }
 }
@@ -199,34 +150,44 @@
   min-height: 170px;
   background-color: #eeeeee;
   margin-bottom: 35px;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__item-color-last {
+  @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
     padding: 41px 33px 63px 33px;
     background-color: #eeeeee;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    min-height: 256px;
+    padding: 52px 50px;
+    background-color: #eeeeee;
+  }
 }
 
 .advantages__item-image {
   display: flex;
   flex-wrap: wrap;
-}
 
-.advantages__item-image:nth-child(2) {
-  margin-bottom: 1px;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__item-image {
+  @media (min-width: @tablet-width) {
     display: block;
     width: 256px;
     min-height: 331px;
     padding: 60px 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 400px;
+    min-height: 330px;
+    padding: 69px 50px;
+  }
+}
+
+.advantages__item-image:nth-child(2) {
+  margin-bottom: 1px;
 }
 
 .advantages__icon {
@@ -237,14 +198,19 @@
   text-transform: uppercase;
   color: #333333;
   margin: 0 0 25px 47px;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__description {
+  @media (min-width: @tablet-width) {
     text-transform: uppercase;
     color: #333333;
-    margin: 0 0 0 0;
-    width: 178px;
+    margin: 0 0 0 9px;
+    width: 172px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #333333;
+    margin: 0 0 0 5px;
+    width: 290px;
     text-align: center;
   }
 }
@@ -252,12 +218,15 @@
 .advantages__picture {
   margin: 0 0 -2px 0;
   display: block;
-}
 
-@media (min-width: @tablet-width) {
-  .advantages__picture {
+  @media (min-width: @tablet-width) {
     width: 512px;
     height: 256px;
     object-fit: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 256px;
   }
 }
