@@ -1,6 +1,11 @@
 .photo-block__item {
   position: relative;
   margin: 0 0 1px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    min-height: 347px;
+  }
 }
 
 .photo-block__item::after {

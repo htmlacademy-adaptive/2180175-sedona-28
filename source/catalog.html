@@ -42,6 +42,7 @@
             <svg
               width="229"
               height="39"
+              class="main-sedona-text"
               viewBox="0 0 229 39"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,19 +53,19 @@
               />
             </svg>
             <svg
-              width="320"
+              width="1200"
               height="57"
               class="main__image-line"
-              viewBox="0 0 320 57"
+              viewBox="0 0 1200 57"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
+                d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z"
                 fill="white"
               />
               <path
-                d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
+                d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z"
                 fill="white"
               />
             </svg>
@@ -78,13 +79,19 @@
           </div>
           <ul class="photo-block__list">
             <li class="photo-block__item">
-              <img
-                src="img/road-icon.jpg"
-                class="photo-block__picture"
-                width="280"
-                height="280"
-                alt="Фотография просторов Седоны."
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/road-icon-tablet.jpg"
+                />
+                <img
+                  src="img/road-icon.jpg"
+                  class="photo-block__spaces"
+                  width="280"
+                  height="280"
+                  alt="Фотография просторов Седоны."
+                />
+              </picture>
               <div class="photo-block__line">
                 <div class="photo-block__line-block">
                   <h2 class="photo-block__list-title">неродные просторы</h2>
@@ -102,83 +109,103 @@
                 </button>
               </div>
             </li>
-            <li class="photo-block__item">
-              <img
-                src="img/nature-icon.jpg"
-                class="photo-block__picture"
-                width="280"
-                height="280"
-                alt="Фотография местной растительности."
-              />
-              <div class="photo-block__line">
-                <div class="photo-block__line-block">
-                  <h2 class="photo-block__list-title">
-                    Местная растительность
-                  </h2>
-                  <p class="photo-block__list-text">Автор фото: Сергей</p>
-                </div>
-                <button type="button" class="photo-block__list-button">
-                  <img
-                    src="img/like-icon.svg"
-                    class="photo-block__like-icon"
-                    width="23"
-                    height="21"
-                    alt="Иконка лайка"
+            <ul class="photo-block__list-line">
+              <li class="photo-block__item">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/nature-icon-tablet.jpg"
                   />
-                  <span class="photo-block__like-counter">143</span>
-                </button>
-              </div>
-            </li>
-            <li class="photo-block__item">
-              <img
-                src="img/forest-icon.jpg"
-                class="photo-block__picture"
-                width="280"
-                height="280"
-                alt="Фотография дороги на север."
-              />
-              <div class="photo-block__line">
-                <div class="photo-block__line-block">
-                  <h2 class="photo-block__list-title">Дорога на север</h2>
-                  <p class="photo-block__list-text">Автор фото: Петр</p>
-                </div>
-                <button type="button" class="photo-block__list-button">
                   <img
-                    src="img/like-icon.svg"
-                    class="photo-block__like-icon"
-                    width="23"
-                    height="21"
-                    alt="Иконка лайка"
+                    src="img/nature-icon.jpg"
+                    class="photo-block__nature"
+                    width="280"
+                    height="280"
+                    alt="Фотография местной растительности."
                   />
-                  <span class="photo-block__like-counter">96</span>
-                </button>
-              </div>
-            </li>
-            <li class="photo-block__item">
-              <img
-                src="img/mountain-icon.jpg"
-                class="photo-block__picture"
-                width="280"
-                height="280"
-                alt="Фотография моста дъявола."
-              />
-              <div class="photo-block__line">
-                <div class="photo-block__line-block">
-                  <h2 class="photo-block__list-title">Мост дьявола</h2>
-                  <p class="photo-block__list-text">Автор фото: Антон</p>
+                </picture>
+                <div class="photo-block__line-short">
+                  <div class="photo-block__line-block">
+                    <h2 class="photo-block__list-title">
+                      Местная растительность
+                    </h2>
+                    <p class="photo-block__list-text">Автор фото: Сергей</p>
+                  </div>
+                  <button type="button" class="photo-block__list-button">
+                    <img
+                      src="img/like-icon.svg"
+                      class="photo-block__like-icon"
+                      width="23"
+                      height="21"
+                      alt="Иконка лайка"
+                    />
+                    <span class="photo-block__like-counter">143</span>
+                  </button>
                 </div>
-                <button type="button" class="photo-block__list-button">
-                  <img
-                    src="img/like-icon.svg"
-                    class="photo-block__like-icon"
-                    width="23"
-                    height="21"
-                    alt="Иконка лайка"
+              </li>
+              <li class="photo-block__item">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/forest-icon-tablet.jpg"
                   />
-                  <span class="photo-block__like-counter">254</span>
-                </button>
-              </div>
-            </li>
+                  <img
+                    src="img/forest-icon.jpg"
+                    class="photo-block__road"
+                    width="280"
+                    height="280"
+                    alt="Фотография дороги на север."
+                  />
+                </picture>
+                <div class="photo-block__line-short">
+                  <div class="photo-block__line-block">
+                    <h2 class="photo-block__list-title">Дорога на север</h2>
+                    <p class="photo-block__list-text">Автор фото: Петр</p>
+                  </div>
+                  <button type="button" class="photo-block__list-button">
+                    <img
+                      src="img/like-icon.svg"
+                      class="photo-block__like-icon"
+                      width="23"
+                      height="21"
+                      alt="Иконка лайка"
+                    />
+                    <span class="photo-block__like-counter">96</span>
+                  </button>
+                </div>
+              </li>
+              <li class="photo-block__item">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/mountain-icon-tablet.jpg"
+                  />
+                  <img
+                    src="img/mountain-icon.jpg"
+                    class="photo-block__bridge"
+                    width="280"
+                    height="280"
+                    alt="Фотография моста дъявола."
+                  />
+                </picture>
+                <div class="photo-block__line-short">
+                  <div class="photo-block__line-block">
+                    <h2 class="photo-block__list-title">Мост дьявола</h2>
+                    <p class="photo-block__list-text">Автор фото: Антон</p>
+                  </div>
+                  <button type="button" class="photo-block__list-button">
+                    <img
+                      src="img/like-icon.svg"
+                      class="photo-block__like-icon"
+                      width="23"
+                      height="21"
+                      alt="Иконка лайка"
+                    />
+                    <span class="photo-block__like-counter">254</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
           </ul>
         </section>
         <section class="demonstration-block">

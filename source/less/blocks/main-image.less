@@ -53,4 +53,36 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 52px 46px 67px 46px;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/background-form-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -56px;
+    height: 289px;
+    width: 768px;
+    overflow: hidden;
+    padding: 95px 154px 118px 157px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/background-form-desktop.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 302px;
+    overflow: hidden;
+    padding: 101px 372px 120px 369px;
+  }
+}
+
+.main-sedona-text {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 457px;
+    height: 80px;
+  }
 }
