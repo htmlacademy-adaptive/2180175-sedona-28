@@ -35,7 +35,7 @@
 .photo-block__text {
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 0 0 0 20px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
@@ -90,11 +90,36 @@
   }
 }
 
-.photo-block__like-counter {
-  margin-left: 11px;
+.photo-block__like-four {
+  margin: 4px 0 0 37px;
+  display: block;
 
   @media (min-width: @tablet-width) {
-    margin-left: 6px;
+    width: 32px;
+    min-height: 21px;
+    margin: 0 0 25px 31px;
+  }
+}
+
+.photo-block__like-three {
+  display: block;
+  margin: 7px 0 0 36px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    min-height: 21px;
+    margin: 0 0 15px 31px;
+  }
+}
+
+.photo-block__like-two {
+  display: block;
+  margin: 3px 0 0 29px;
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    min-height: 21px;
+    margin: 0 0 15px 39px;
   }
 }
 
@@ -103,7 +128,7 @@
     display: flex;
     width: 648px;
     min-height: 86px;
-    padding: 23px 15px 0 20px;
+    padding: 22px 27px 0 20px;
     justify-content: space-between;
     background-color: #f2f2f2;
   }
@@ -114,7 +139,7 @@
     display: flex;
     width: 324px;
     min-height: 80px;
-    padding: 22px 15px 4px 20px;
+    padding: 22px 19px 4px 20px;
     justify-content: space-between;
     background-color: #f2f2f2;
   }
@@ -162,15 +187,22 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  width: 59px;
+  min-height: 26px;
   background-color: #ffffff;
   border: none;
   padding: 0;
+  background-image: url("../../img/like-icon.svg");
+  background-repeat: no-repeat;
   margin: 11px 0 25px 0;
 
   @media (min-width: @tablet-width) {
+    width: 56px;
+    min-height: 25px;
     margin: 0 0 0 0;
-    padding: 0 5px 17px 0;
+    padding: 0;
     background-color: #f2f2f2;
+    background-position: 0 5px;
   }
 }
 
@@ -181,7 +213,6 @@
   margin: 0 0 1px 0;
 
   @media (min-width: @tablet-width) {
-    width: 324px;
     min-height: 347px;
   }
 }

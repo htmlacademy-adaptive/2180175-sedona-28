@@ -46,12 +46,15 @@
   }
 }
 
+//main-image
+
 .main__background-image {
   position: relative;
   height: 158px;
   background-image: url("../../img/background-form.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% -55px;
   padding: 52px 46px 67px 46px;
   overflow: hidden;
 
@@ -84,5 +87,73 @@
   @media (min-width: @desktop-width) {
     width: 457px;
     height: 80px;
+  }
+}
+
+//main-name
+
+.main-name__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 35px 31px;
+  min-height: 80px;
+  width: 255px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 29px 166px;
+    min-height: 52px;
+    width: 434px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 29px 380px;
+    min-height: 52px;
+    width: 434px;
+  }
+}
+
+.main-name__reason {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 0 0 18px;
+  text-align: center;
+  width: 284px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 0 56px 124px;
+    text-align: center;
+    width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 43px 339px;
+  }
+}
+
+.main__name-image {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
   }
 }
