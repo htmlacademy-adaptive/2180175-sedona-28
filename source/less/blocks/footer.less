@@ -33,11 +33,20 @@
   @media (min-width: @tablet-width) {
     margin: 11px 114px 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 136px;
+    min-height: 42px;
+    word-break: break-word;
+  }
 }
 
 .footer__line {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  width: 156px;
+  min-height: 55px;
   gap: 6px;
   padding: 0;
   margin: 0 0 30px 0;
@@ -87,6 +96,10 @@
 .footer__logo-block {
   margin-left: 96px - 82px;
   display: flex;
+  flex-wrap: wrap;
+  width: 130px;
+  min-height: 53px;
+  word-break: break-word;
 
   @media (min-width: @tablet-width) {
     margin: 0;

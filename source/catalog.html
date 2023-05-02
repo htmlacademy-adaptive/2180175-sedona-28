@@ -80,6 +80,10 @@
             <li class="photo-block__item">
               <picture>
                 <source
+                  media="(min-width: 1200px)"
+                  srcset="img/road-icon-desktop.jpg"
+                />
+                <source
                   media="(min-width: 768px)"
                   srcset="img/road-icon-tablet.jpg"
                 />
@@ -101,82 +105,93 @@
                 </button>
               </div>
             </li>
-            <ul class="photo-block__list-line">
-              <li class="photo-block__item">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/nature-icon-tablet.jpg"
-                  />
-                  <img
-                    src="img/nature-icon.jpg"
-                    class="photo-block__nature"
-                    width="280"
-                    height="280"
-                    alt="Фотография местной растительности."
-                  />
-                </picture>
-                <div class="photo-block__line-short">
-                  <div class="photo-block__line-block">
-                    <h2 class="photo-block__list-title">
-                      Местная растительность
-                    </h2>
-                    <p class="photo-block__list-text">Автор фото: Сергей</p>
-                  </div>
-                  <button type="button" class="photo-block__list-button">
-                    <span class="photo-block__like-three">143</span>
-                  </button>
+
+            <li class="photo-block__item-short">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/nature-icon-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/nature-icon-tablet.jpg"
+                />
+                <img
+                  src="img/nature-icon.jpg"
+                  class="photo-block__nature"
+                  width="280"
+                  height="280"
+                  alt="Фотография местной растительности."
+                />
+              </picture>
+              <div class="photo-block__line-short">
+                <div class="photo-block__line-block">
+                  <h2 class="photo-block__list-title">
+                    Местная растительность
+                  </h2>
+                  <p class="photo-block__list-text">Автор фото: Сергей</p>
                 </div>
-              </li>
-              <li class="photo-block__item">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/forest-icon-tablet.jpg"
-                  />
-                  <img
-                    src="img/forest-icon.jpg"
-                    class="photo-block__road"
-                    width="280"
-                    height="280"
-                    alt="Фотография дороги на север."
-                  />
-                </picture>
-                <div class="photo-block__line-short">
-                  <div class="photo-block__line-block">
-                    <h2 class="photo-block__list-title">Дорога на север</h2>
-                    <p class="photo-block__list-text">Автор фото: Петр</p>
-                  </div>
-                  <button type="button" class="photo-block__list-button">
-                    <span class="photo-block__like-two">96</span>
-                  </button>
+                <button type="button" class="photo-block__list-button">
+                  <span class="photo-block__like-three">143</span>
+                </button>
+              </div>
+            </li>
+            <li class="photo-block__item-short">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/forest-icon-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/forest-icon-tablet.jpg"
+                />
+                <img
+                  src="img/forest-icon.jpg"
+                  class="photo-block__road"
+                  width="280"
+                  height="280"
+                  alt="Фотография дороги на север."
+                />
+              </picture>
+              <div class="photo-block__line-short">
+                <div class="photo-block__line-block">
+                  <h2 class="photo-block__list-title">Дорога на север</h2>
+                  <p class="photo-block__list-text">Автор фото: Петр</p>
                 </div>
-              </li>
-              <li class="photo-block__item">
-                <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/mountain-icon-tablet.jpg"
-                  />
-                  <img
-                    src="img/mountain-icon.jpg"
-                    class="photo-block__bridge"
-                    width="280"
-                    height="280"
-                    alt="Фотография моста дъявола."
-                  />
-                </picture>
-                <div class="photo-block__line-short">
-                  <div class="photo-block__line-block">
-                    <h2 class="photo-block__list-title">Мост дьявола</h2>
-                    <p class="photo-block__list-text">Автор фото: Антон</p>
-                  </div>
-                  <button type="button" class="photo-block__list-button">
-                    <span class="photo-block__like-three">254</span>
-                  </button>
+                <button type="button" class="photo-block__list-button">
+                  <span class="photo-block__like-two">96</span>
+                </button>
+              </div>
+            </li>
+            <li class="photo-block__item-short">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/mountain-icon-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/mountain-icon-tablet.jpg"
+                />
+                <img
+                  src="img/mountain-icon.jpg"
+                  class="photo-block__bridge"
+                  width="280"
+                  height="280"
+                  alt="Фотография моста дъявола."
+                />
+              </picture>
+              <div class="photo-block__line-short">
+                <div class="photo-block__line-block">
+                  <h2 class="photo-block__list-title">Мост дьявола</h2>
+                  <p class="photo-block__list-text">Автор фото: Антон</p>
                 </div>
-              </li>
-            </ul>
+                <button type="button" class="photo-block__list-button">
+                  <span class="photo-block__like-three">254</span>
+                </button>
+              </div>
+            </li>
           </ul>
         </section>
         <section class="demonstration-block">
