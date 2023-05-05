@@ -41,6 +41,7 @@
             <svg
               width="229"
               height="39"
+              class="main-sedona-text"
               viewBox="0 0 229 39"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -51,19 +52,19 @@
               />
             </svg>
             <svg
-              width="320"
+              width="1200"
               height="57"
               class="main__image-line"
-              viewBox="0 0 320 57"
+              viewBox="0 0 1200 57"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z"
+                d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z"
                 fill="white"
               />
               <path
-                d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"
+                d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z"
                 fill="white"
               />
             </svg>
@@ -77,50 +78,60 @@
         <section class="info-block">
           <h2 class="visually-hidden">Форма для заполнения данных</h2>
           <form action="#" class="info-block__form">
-            <fieldset class="info-block__name-fieldset">
-              <legend class="info-block__title">Представьтесь:</legend>
-              <label class="info-block__form-title">ИМЯ*:</label>
-              <input
-                type="text"
-                class="info-block__form-input"
-                placeholder="Пётр"
-              />
-              <label class="info-block__form-title">ФАМИЛИЯ*:</label>
-              <input
-                type="text"
-                class="info-block__form-input"
-                placeholder="Пустота"
-              />
-              <label class="info-block__form-title">Отчество:</label>
-              <input
-                type="text"
-                class="info-block__form-input"
-                placeholder="Викторович"
-              />
-            </fieldset>
-            <fieldset class="info-block__info-fieldset">
-              <legend class="info-block__title">Контактная информация:</legend>
-              <label class="info-block__form-title">Контактный телефон*:</label>
-              <div class="info-block__form-line">
+            <div class="info_block__line">
+              <fieldset class="info-block__name-fieldset">
+                <legend class="info-block__title">Представьтесь:</legend>
+                <label class="info-block__form-title">ИМЯ*:</label>
                 <input
                   type="text"
-                  class="info-block__tel-input"
-                  placeholder="Введите телефон"
+                  class="info-block__form-input"
+                  placeholder="Пётр"
                 />
-                <div class="info-block__background-image"></div>
-              </div>
-              <label class="info-block__form-title">Электронная почта*:</label>
-              <div class="info-block__form-line">
+                <label class="info-block__form-title">ФАМИЛИЯ*:</label>
                 <input
-                  type="email"
-                  class="info-block__email-input"
-                  placeholder="Введите e-mail"
+                  type="text"
+                  class="info-block__form-input"
+                  placeholder="Пустота"
                 />
-                <div class="info-block__background-image-second"></div>
-              </div>
-            </fieldset>
+                <label class="info-block__form-title">Отчество:</label>
+                <input
+                  type="text"
+                  class="info-block__form-input"
+                  placeholder="Викторович"
+                />
+              </fieldset>
+              <fieldset class="info-block__info-fieldset">
+                <legend class="info-block__title">
+                  Контактная информация:
+                </legend>
+                <label class="info-block__form-title"
+                  >Контактный телефон*:</label
+                >
+                <div class="info-block__form-line">
+                  <input
+                    type="text"
+                    class="info-block__tel-input"
+                    placeholder="Введите телефон"
+                  />
+                  <div class="info-block__background-image"></div>
+                </div>
+                <label class="info-block__form-title"
+                  >Электронная почта*:</label
+                >
+                <div class="info-block__form-line">
+                  <input
+                    type="email"
+                    class="info-block__email-input"
+                    placeholder="Введите e-mail"
+                  />
+                  <div class="info-block__background-image-second"></div>
+                </div>
+              </fieldset>
+            </div>
             <fieldset class="info-block__emotion-fieldset">
-              <legend class="info-block__title">ВАше Общее впечатление:</legend>
+              <legend class="info-block__title-line">
+                ВАше Общее впечатление:
+              </legend>
               <ul class="info-block__filter-list">
                 <li class="info-block__filter-item">
                   <label class="info-block__control">
@@ -161,12 +172,13 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="info-block__emotion-fieldset">
-              <legend class="info-block__title">
-                посещенные достопримечательности:
+            <fieldset class="info-block__emotion-fieldset-checkbox">
+              <legend class="info-block__title-line-checkbox">
+                посещенные<br class="info-block__tablet-br" />
+                достопримечательности:
               </legend>
-              <ul class="info-block__filter-list">
-                <li class="info-block__filter-item">
+              <ul class="info-block__filter-list-checkbox">
+                <li class="info-block__filter-item-checkbox">
                   <label class="info-block__control">
                     <input
                       class="visually-hidden info-block__control-checkbox"
@@ -178,7 +190,7 @@
                     <span class="info-block__text">Мост Дьявола</span>
                   </label>
                 </li>
-                <li class="info-block__filter-item">
+                <li class="info-block__filter-item-checkbox">
                   <label class="info-block__control">
                     <input
                       class="visually-hidden info-block__control-checkbox"
@@ -190,7 +202,7 @@
                     <span class="info-block__text">Гора-Колокол</span>
                   </label>
                 </li>
-                <li class="info-block__filter-item">
+                <li class="info-block__filter-item-checkbox">
                   <label class="info-block__control">
                     <input
                       class="visually-hidden info-block__control-checkbox"
@@ -202,7 +214,7 @@
                     <span class="info-block__text">Слайд-парк</span>
                   </label>
                 </li>
-                <li class="info-block__filter-item">
+                <li class="info-block__filter-item-checkbox">
                   <label class="info-block__control">
                     <input
                       class="visually-hidden info-block__control-checkbox"
@@ -223,7 +235,7 @@
                 class="info-block__textarea-feedback"
                 placeholder="Опишите подробно все свои восторги "
               ></textarea>
-              <button type="button" class="info-block__feedback-button">
+              <button type="button" class="info-block__feedback-button button">
                 ОТПРАВИТЬ ОТЗЫВ
               </button>
               <span class="info-block__necessary-fields"

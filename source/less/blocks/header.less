@@ -200,6 +200,10 @@
 
 //header-button
 
+.header-nav--nojs .header__button {
+  display: none;
+}
+
 .header__button {
   position: absolute;
   top: 17px;
@@ -218,4 +222,37 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.header-nav--closed .header__button::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.header-nav--closed .header__button:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow: 0 8px 0 0 fade(#ffffff, 30%), 0 16px 0 0 fade(#ffffff, 30%);
+}
+
+.header-nav--opened .header__button {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+}
+
+.header-nav--opened .header-nav {
+  display: block;
 }
