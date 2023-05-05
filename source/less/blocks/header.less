@@ -41,7 +41,6 @@
   z-index: 1;
   top: 0;
   left: 0;
-  display: none;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -198,6 +197,16 @@
   }
 }
 
+.header__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.header__nav-item {
+}
+
 //header-button
 
 .header-nav--nojs .header__button {
@@ -253,6 +262,6 @@
   }
 }
 
-.header-nav--opened .header-nav {
+.header-nav--opened {
   display: block;
 }

@@ -1,4 +1,4 @@
-let navMain = document.querySelector(".header__nav");
+let navMain = document.querySelector(".header__nav-list");
 let navToggle = document.querySelector(".header__button");
 
 navMain.classList.remove("main-nav--nojs");
