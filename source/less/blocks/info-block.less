@@ -4,6 +4,11 @@
     flex-wrap: wrap;
     margin: 0 0 47px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 0 0 121px;
+    margin: 0 0 56px 0;
+  }
 }
 
 .info-block__title {
@@ -52,6 +57,23 @@
       top: 10px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 43px;
+
+    &::before {
+      content: "";
+      width: 280px;
+      height: 1px;
+      top: 11px;
+    }
+
+    &::after {
+      content: "";
+      width: 280px;
+      top: 11px;
+    }
+  }
 }
 
 .info-block__title-line-checkbox {
@@ -83,6 +105,22 @@
       height: 1px;
       background-color: #dbdbdb;
       right: 15px;
+      top: 25px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 60px -1px;
+
+    &::before {
+      width: 280px;
+      left: 0;
+      top: 25px;
+    }
+
+    &::after {
+      width: 280px;
+      right: 0;
       top: 25px;
     }
   }
@@ -159,6 +197,10 @@
   @media (min-width: @tablet-width) {
     width: 237px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 372px;
+  }
 }
 
 .info-block__email-input::placeholder {
@@ -181,6 +223,12 @@
     padding: 0 0 0 0;
     margin: 0 0 47px 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    min-height: 134px;
+    margin: 0 0 40px 120px;
+  }
 }
 
 .info-block__emotion-fieldset-checkbox {
@@ -195,6 +243,12 @@
     padding: 0 0 0 0;
     margin: 0 0 26px 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    min-height: 189px;
+    margin: 0 0 25px 120px;
+  }
 }
 
 .info-block__emotions-feedback {
@@ -204,6 +258,12 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 0 70px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0 0 70px 120px;
+    padding: 0 0 0 0;
   }
 }
 
@@ -224,7 +284,11 @@
   @media (min-width: @tablet-width) {
     margin: 0 0 0 41px;
     width: 324px;
-    height: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    margin: 0 0 0 96px;
   }
 }
 
@@ -240,6 +304,13 @@
     flex-wrap: wrap;
     margin: 0 0 0 37px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    min-height: 80px;
+    margin: 0 0 0 0;
+    padding: 2px 0 16px 54px;
+  }
 }
 
 .info-block__filter-list-checkbox {
@@ -254,6 +325,13 @@
     flex-wrap: wrap;
     margin: 1px 0 0 84px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0;
+    padding: 0 0 0 45px;
+    gap: 32px;
+  }
 }
 
 .info-block__filter-item {
@@ -267,6 +345,16 @@
 
     &:nth-child(1) {
       margin-right: 16px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      margin-right: 29px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 28px;
     }
   }
 }
@@ -286,6 +374,18 @@
 
     &:nth-child(4) {
       margin-left: 32px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-right: -18px;
     }
   }
 }
@@ -310,6 +410,10 @@
 
   @media (min-width: @tablet-width) {
     width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
   }
 }
 
@@ -337,6 +441,12 @@
     padding: 0 0 0 0;
     margin: 55px 0 0 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    min-height: 228px;
+    margin: 0;
+  }
 }
 
 .info-block__name-fieldset {
@@ -361,6 +471,16 @@
       bottom: 10px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 100px 0 0;
+    width: 430px;
+    min-height: 323px;
+
+    &::before {
+      left: 479px;
+    }
+  }
 }
 
 .info-block__necessary-fields {
@@ -374,6 +494,10 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
     margin: 0 0 0 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 221px;
   }
 }
 
@@ -391,6 +515,10 @@
 
   @media (min-width: @tablet-width) {
     width: 237px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 372px;
   }
 }
 
@@ -421,6 +549,12 @@
     width: 648px;
     height: 160px;
     margin: 0 0 41px 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    height: 160px;
+    margin: 0 0 42px 98px;
   }
 }
 

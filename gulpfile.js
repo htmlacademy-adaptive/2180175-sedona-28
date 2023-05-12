@@ -2,6 +2,8 @@ import gulp from "gulp";
 import plumber from "gulp-plumber";
 import less from "gulp-less";
 import postcss from "gulp-postcss";
+import csso from "postcss-csso";
+import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 
@@ -10,9 +12,10 @@ import browser from "browser-sync";
 export const styles = () => {
   return gulp
     .src("source/less/style.less", { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(plumber()) //обработка ошибок
+    .pipe(less()) //style.less - style.css
+    .pipe(postcss([autoprefixer(), csso()])) //style.css - style.css[prefix]
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
