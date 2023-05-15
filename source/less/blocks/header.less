@@ -265,8 +265,31 @@
   height: 22px;
   z-index: 2;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.header-nav--opened + .header__button {
+  background-image: url("../../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: #81b3d2;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
