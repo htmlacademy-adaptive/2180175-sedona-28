@@ -11,6 +11,7 @@ import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import del from "del";
 import browser from "browser-sync";
+import sourcemaps from "gulp-sourcemaps";
 
 // Styles
 
@@ -35,9 +36,16 @@ const html = () => {
 
 const scripts = () => {
   return gulp
-    .src("source/js/script.js")
-    .pipe(gulp.dest("build/js"))
-    .pipe(browser.stream());
+    .src("source/js/*.js")
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(
+      rename(function (path) {
+        path.extname = ".min.js";
+      })
+    )
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("build/js"));
 };
 
 // Images

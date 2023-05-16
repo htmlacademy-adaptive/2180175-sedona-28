@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-      <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
     <div class="page-container">
       <header class="header">
-        <a href="#" class="header__logo">
+        <a href="index.html" class="header__logo">
           <img
             class="header__logo-image"
             src="img/main-logo.svg"
@@ -30,7 +30,12 @@
               <a href="form.html" class="header__nav-link"> Форма Отзыва </a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link-last"> HTML ACADEMY </a>
+              <a
+                href="https://htmlacademy.ru/intensive/adaptive"
+                class="header__nav-link-last"
+              >
+                HTML ACADEMY
+              </a>
             </li>
           </ul>
           <button type="button" class="header__button">
@@ -239,12 +244,15 @@
                 placeholder="Опишите подробно все свои восторги "
               ></textarea>
               <div class="info-block__line">
-              <button type="button" class="info-block__feedback-button button">
-                ОТПРАВИТЬ ОТЗЫВ
-              </button>
-              <span class="info-block__necessary-fields"
-                >* — обязательные поля</span
-              >
+                <button
+                  type="button"
+                  class="info-block__feedback-button button"
+                >
+                  ОТПРАВИТЬ ОТЗЫВ
+                </button>
+                <span class="info-block__necessary-fields"
+                  >* — обязательные поля</span
+                >
               </div>
             </fieldset>
           </form>
@@ -254,16 +262,30 @@
         <a href="#" class="footer__hashtag">#visitSEDONA</a>
         <ul class="footer__line">
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-vk footer-link"> </a>
+            <a
+              href="https://vk.com/htmlacademy"
+              class="footer__line-social-vk footer-link"
+            >
+            </a>
           </li>
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-telegram footer-link"></a>
+            <a
+              href="tg://resolve?domain=htmlacademy"
+              class="footer__line-social-telegram footer-link"
+            ></a>
           </li>
           <li class="footer__line-item">
-            <a href="#" class="footer__line-social-youtube footer-link"> </a>
+            <a
+              href="https://www.youtube.com/user/htmlacademyru"
+              class="footer__line-social-youtube footer-link"
+            >
+            </a>
           </li>
         </ul>
-        <div class="footer__logo-block">
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="footer__logo-block"
+        >
           <p class="footer__logo-text">Разработано</p>
           <svg
             width="29"
@@ -276,23 +298,23 @@
               d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
             />
           </svg>
-        </div>
+        </a>
       </footer>
     </div>
 
     <!--Окно ошибки-->
     <div class="modal__container">
-    <section class="modal modal--error">
-      <div class="modal__block-error">
-        <p class="modal__title-error">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
-        <p class="modal__text-error">
-          Проверьте поля, выделенные<br class="modal__mobile-br"/>
-          красным, скорее всего вы<br class="modal__mobile-br"/>
-          забыли их заполнить
-        </p>
-      </div>
-      <button type="button" class="modal__button-error button">OK</button>
-    </div>
+      <section class="modal modal--error">
+        <div class="modal__block-error">
+          <h3 class="modal__title-error">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+          <p class="modal__text-error">
+            Проверьте поля, выделенные<br class="modal__mobile-br" />
+            красным, скорее всего вы<br class="modal__mobile-br" />
+            забыли их заполнить
+          </p>
+        </div>
+        <button type="button" class="modal__button-error button">OK</button>
+      </section>
     </div>
 
     <!--Окно успешного отправления отзыва-->
@@ -314,7 +336,6 @@
         </div>
       </div>
     </div>
-
-    <script src="./js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

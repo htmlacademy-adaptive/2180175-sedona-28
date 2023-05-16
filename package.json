@@ -44,5 +44,8 @@
   "engines": {
     "node": "16.13.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
+  }
 }
