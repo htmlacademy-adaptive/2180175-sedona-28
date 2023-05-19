@@ -115,6 +115,26 @@
   word-break: break-word;
   text-decoration: none;
 
+  &:hover .footer__logo-text {
+    color: #81b3d2;
+  }
+
+  &:hover .footer__htmlacademy-logo {
+    fill: #81b3d2;
+  }
+
+  &:active .footer__logo-text {
+    color: #b3b3b3;
+  }
+
+  &:active .footer__htmlacademy-logo {
+    fill: #b3b3b3;
+  }
+
+  &:focus {
+    outline: 1px solid #000000;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
     display: flex;
@@ -138,22 +158,4 @@
     margin: 0 11px 0 1px;
     padding-top: 7px;
   }
-}
-
-//footer-logo styleguide
-
-.footer__logo-block:hover .footer__logo-text {
-  color: #81b3d2;
-}
-
-.footer__logo-block:hover .footer__htmlacademy-logo {
-  fill: #81b3d2;
-}
-
-.footer__logo-block:active .footer__logo-text {
-  color: #b3b3b3;
-}
-
-.footer__logo-block:active .footer__htmlacademy-logo {
-  fill: #b3b3b3;
 }

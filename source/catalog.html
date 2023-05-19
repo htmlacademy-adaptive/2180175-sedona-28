@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
@@ -88,15 +94,41 @@
             <li class="photo-block__item">
               <picture>
                 <source
+                  type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/road-icon-desktop.jpg"
+                  srcset="
+                    img/road-icon-desktop.webp    1x,
+                    img/road-icon-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/road-icon-tablet.webp    1x,
+                    img/road-icon-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/road-icon.webp 1x, img/road-icon@2x.webp 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/road-icon-desktop.jpg    1x,
+                    img/road-icon-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/road-icon-tablet.jpg"
+                  srcset="
+                    img/road-icon-tablet.jpg    1x,
+                    img/road-icon-tablet@2x.jpg 2x
+                  "
                 />
                 <img
-                  src="img/road-icon.jpg"
+                  src="img/road-icon.jpg 1x, img/road-icon@2x.jpg 2x"
                   class="photo-block__spaces"
                   width="280"
                   height="280"
@@ -117,15 +149,41 @@
             <li class="photo-block__item-short">
               <picture>
                 <source
+                  type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/nature-icon-desktop.jpg"
+                  srcset="
+                    img/nature-icon-desktop.webp    1x,
+                    img/nature-icon-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/nature-icon-tablet.webp    1x,
+                    img/nature-icon-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/nature-icon.webp 1x, img/nature-icon@2x.webp 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/nature-icon-desktop.jpg    1x,
+                    img/nature-icon-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/nature-icon-tablet.jpg"
+                  srcset="
+                    img/nature-icon-tablet.jpg    1x,
+                    img/nature-icon-tablet@2x.jpg 2x
+                  "
                 />
                 <img
-                  src="img/nature-icon.jpg"
+                  src="img/nature-icon.jpg 1x, img/nature-icon@2x.jpg 2x"
                   class="photo-block__nature"
                   width="280"
                   height="280"
@@ -147,15 +205,41 @@
             <li class="photo-block__item-short">
               <picture>
                 <source
+                  type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/forest-icon-desktop.jpg"
+                  srcset="
+                    img/forest-icon-desktop.webp    1x,
+                    img/forest-icon-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/forest-icon-tablet.webp    1x,
+                    img/forest-icon-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="img/forest-icon.webp 1x, img/forest-icon@2x.webp 2x"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/forest-icon-desktop.jpg    1x,
+                    img/forest-icon-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/forest-icon-tablet.jpg"
+                  srcset="
+                    img/forest-icon-tablet.jpg    1x,
+                    img/forest-icon-tablet@2x.jpg 2x
+                  "
                 />
                 <img
-                  src="img/forest-icon.jpg"
+                  src="img/forest-icon.jpg 1x, img/forest-icon@2x.jpg 2x"
                   class="photo-block__road"
                   width="280"
                   height="280"
@@ -175,15 +259,44 @@
             <li class="photo-block__item-short">
               <picture>
                 <source
+                  type="image/webp"
                   media="(min-width: 1200px)"
-                  srcset="img/mountain-icon-desktop.jpg"
+                  srcset="
+                    img/mountain-icon-desktop.webp    1x,
+                    img/mountain-icon-desktop@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/mountain-icon-tablet.webp    1x,
+                    img/mountain-icon-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/mountain-icon.webp    1x,
+                    img/mountain-icon@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    img/mountain-icon-desktop.jpg    1x,
+                    img/mountain-icon-desktop@2x.jpg 2x
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/mountain-icon-tablet.jpg"
+                  srcset="
+                    img/mountain-icon-tablet.jpg    1x,
+                    img/mountain-icon-tablet@2x.jpg 2x
+                  "
                 />
                 <img
-                  src="img/mountain-icon.jpg"
+                  src="img/mountain-icon.jpg 1x, img/mountain-icon@2x.jpg 2x"
                   class="photo-block__bridge"
                   width="280"
                   height="280"
