@@ -185,7 +185,8 @@
     background-color: #d5d5d5;
   }
 
-  &:active .info-block__control-mark::before {
+  &:active .info-block__control-mark::before,
+  &:active .info-block__control-mark-checkbox::before {
     opacity: 0.3;
   }
 }
@@ -618,11 +619,15 @@
 }
 
 .info-block__control-checkbox[type="checkbox"]:checked {
-  & + .info-block__control-mark-checkbox {
+  & + .info-block__control-mark-checkbox::before {
+    position: absolute;
     background-image: url("../../img/tick.svg");
     background-repeat: no-repeat;
-    background-position: 50%;
     content: "";
+    height: 16px;
+    width: 22px;
+    top: 15px;
+    left: 12px;
   }
 }
 
