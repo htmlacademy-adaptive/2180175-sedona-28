@@ -46,6 +46,7 @@
   },
   "type": "module",
   "dependencies": {
-    "gulp-sourcemaps": "^3.0.0"
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stacksvg": "^2.0.1"
   }
 }

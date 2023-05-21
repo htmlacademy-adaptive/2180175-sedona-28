@@ -12,6 +12,7 @@ import svgstore from "gulp-svgstore";
 import del from "del";
 import browser from "browser-sync";
 import sourcemaps from "gulp-sourcemaps";
+import { stacksvg } from "gulp-stacksvg";
 
 // Styles
 
@@ -59,6 +60,16 @@ const optimizeImages = () => {
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg}").pipe(gulp.dest("build/img"));
+};
+
+// Create SVG Sprite
+
+const stack = () => {
+  return gulp
+    .src(["source/img/*.svg"])
+    .pipe(svgo())
+    .pipe(stacksvg({ output: `stack` }))
+    .pipe(gulp.dest("build/img"));
 };
 
 // WebP
