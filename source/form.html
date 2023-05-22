@@ -129,30 +129,40 @@
             <div class="info_block__line">
               <fieldset class="info-block__name-fieldset">
                 <legend class="info-block__title">Представьтесь:</legend>
-                <label class="info-block__form-title">ИМЯ*:</label>
+                <label for="name" class="info-block__form-title">ИМЯ*:</label>
                 <input
                   type="text"
                   class="info-block__form-input input"
                   placeholder="Пётр"
+                  name="name"
+                  id="name"
                 />
-                <label class="info-block__form-title">ФАМИЛИЯ*:</label>
+                <label for="surname" class="info-block__form-title"
+                  >ФАМИЛИЯ*:</label
+                >
                 <input
                   type="text"
                   class="info-block__form-input input"
                   placeholder="Пустота"
+                  name="surname"
+                  id="surname"
                 />
-                <label class="info-block__form-title">Отчество:</label>
+                <label for="patronymic" class="info-block__form-title"
+                  >Отчество:</label
+                >
                 <input
                   type="text"
                   class="info-block__form-input input"
                   placeholder="Викторович"
+                  name="patronymic"
+                  id="patronymic"
                 />
               </fieldset>
               <fieldset class="info-block__info-fieldset">
                 <legend class="info-block__title">
                   Контактная информация:
                 </legend>
-                <label class="info-block__form-title"
+                <label class="info-block__form-title" for="tel"
                   >Контактный телефон*:</label
                 >
                 <div class="info-block__form-line">
@@ -160,10 +170,12 @@
                     type="tel"
                     class="info-block__tel-input input"
                     placeholder="Введите телефон"
+                    name="tel"
+                    id="tel"
                   />
                   <div class="info-block__background-image"></div>
                 </div>
-                <label class="info-block__form-title"
+                <label class="info-block__form-title" for="email"
                   >Электронная почта*:</label
                 >
                 <div class="info-block__form-line">
@@ -171,6 +183,8 @@
                     type="email"
                     class="info-block__email-input input"
                     placeholder="Введите e-mail"
+                    name="email"
+                    id="email"
                   />
                   <div class="info-block__background-image-second"></div>
                 </div>
@@ -182,37 +196,43 @@
               </legend>
               <ul class="info-block__filter-list">
                 <li class="info-block__filter-item">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="radio-button">
                     <input
                       class="visually-hidden info-block__control-input"
                       type="radio"
                       name="product-group"
                       value="shaving-supplies"
                       checked
+                      name="radio-button"
+                      id="radio-button"
                     />
                     <span class="info-block__control-mark"></span>
                     <span class="info-block__text">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="radio-button">
                     <input
                       class="visually-hidden info-block__control-input"
                       type="radio"
                       name="product-group"
                       value="care-products"
+                      name="radio-button"
+                      id="radio-button"
                     />
                     <span class="info-block__control-mark"></span>
                     <span class="info-block__text">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="radio-button">
                     <input
                       class="visually-hidden info-block__control-input"
                       type="radio"
                       name="product-group"
                       value="accessories"
+                      name="radio-button"
+                      id="radio-button"
                     />
                     <span class="info-block__control-mark"></span>
                     <span class="info-block__text">Затрудняюсь ответить</span>
@@ -227,47 +247,55 @@
               </legend>
               <ul class="info-block__filter-list-checkbox">
                 <li class="info-block__filter-item-checkbox">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="checkbox">
                     <input
                       class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
+                      name="checkbox"
+                      id="checkbox"
                     />
                     <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item-checkbox">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="checkbox">
                     <input
                       class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
+                      name="checkbox"
+                      id="checkbox"
                     />
                     <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item-checkbox">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="checkbox">
                     <input
                       class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
                       checked
+                      name="checkbox"
+                      id="checkbox"
                     />
                     <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="info-block__filter-item-checkbox">
-                  <label class="info-block__control">
+                  <label class="info-block__control" for="checkbox">
                     <input
                       class="visually-hidden info-block__control-checkbox"
                       type="checkbox"
                       name="product-group"
+                      name="checkbox"
+                      id="checkbox"
                     />
                     <span class="info-block__control-mark-checkbox"></span>
                     <span class="info-block__text">Красные скалы</span>
@@ -285,7 +313,7 @@
               ></textarea>
               <div class="info-block__line">
                 <button
-                  type="button"
+                  type="submit"
                   class="info-block__feedback-button button"
                 >
                   ОТПРАВИТЬ ОТЗЫВ
