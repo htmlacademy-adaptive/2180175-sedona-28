@@ -29,7 +29,7 @@
             <li class="header__nav-item">
               <a href="index.html" class="header__nav-link"> Главная </a>
             </li>
-            <li class="header__nav-item">
+            <li class="header__nav-item header__nav-item--catalog">
               <a href="catalog.html" class="header__nav-link"> Фото и видео </a>
             </li>
             <li class="header__nav-item">
@@ -51,28 +51,30 @@
       </header>
       <main class="catalog-main">
         <section class="photo-block">
-          <div class="main__background-image">
+          <div class="photo-block__background-image">
             <svg
               width="229"
               height="39"
-              class="main-sedona-text"
+              class="photo-block__sedona-text"
               viewBox="0 0 229 39"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              focusable="false"
-              aria-hidden="true"
+              role="img"
+              aria-label="Седона."
             >
-              <use href="img/stack.svg/sedona.svg#sedona-text"></use>
+              <use href="img/sprite.svg#sedona"></use>
             </svg>
             <svg
               width="1200"
               height="57"
-              class="main__image-line"
+              class="photo-block__image-line"
               viewBox="0 0 1200 57"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Белая линия."
             >
-              <use xlink:href="#image-line"></use>
+              <use href="img/sprite.svg#white-line"></use>
             </svg>
           </div>
           <div class="photo-block__block">
@@ -84,49 +86,52 @@
           </div>
           <ul class="photo-block__list">
             <li class="photo-block__item">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/road-icon-desktop.webp    1x,
-                    img/road-icon-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/road-icon-tablet.webp    1x,
-                    img/road-icon-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/road-icon.webp 1x, img/road-icon@2x.webp 2x"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/road-icon-desktop.jpg    1x,
-                    img/road-icon-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/road-icon-tablet.jpg    1x,
-                    img/road-icon-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/road-icon.jpg 1x, img/road-icon@2x.jpg 2x"
-                  class="photo-block__spaces"
-                  width="280"
-                  height="280"
-                  alt="Фотография просторов Седоны."
-                />
-              </picture>
+              <a href="#" class="photo-block__photo-link">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/road-icon-desktop.webp    1x,
+                      img/road-icon-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/road-icon-tablet.webp    1x,
+                      img/road-icon-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/road-icon.webp 1x, img/road-icon@2x.webp 2x"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/road-icon-desktop.jpg    1x,
+                      img/road-icon-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/road-icon-tablet.jpg    1x,
+                      img/road-icon-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/road-icon.jpg"
+                    srcset="img/road-icon@2x.jpg 2x"
+                    class="photo-block__spaces"
+                    width="280"
+                    height="280"
+                    alt="Фотография просторов Седоны."
+                  />
+                </picture>
+              </a>
               <div class="photo-block__line">
                 <div class="photo-block__line-block">
                   <h2 class="photo-block__list-title">неродные просторы</h2>
@@ -139,49 +144,52 @@
             </li>
 
             <li class="photo-block__item-short">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/nature-icon-desktop.webp    1x,
-                    img/nature-icon-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/nature-icon-tablet.webp    1x,
-                    img/nature-icon-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/nature-icon.webp 1x, img/nature-icon@2x.webp 2x"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/nature-icon-desktop.jpg    1x,
-                    img/nature-icon-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/nature-icon-tablet.jpg    1x,
-                    img/nature-icon-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/nature-icon.jpg 1x, img/nature-icon@2x.jpg 2x"
-                  class="photo-block__nature"
-                  width="280"
-                  height="280"
-                  alt="Фотография местной растительности."
-                />
-              </picture>
+              <a href="#" class="photo-block__photo-link">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/nature-icon-desktop.webp    1x,
+                      img/nature-icon-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/nature-icon-tablet.webp    1x,
+                      img/nature-icon-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/nature-icon.webp 1x, img/nature-icon@2x.webp 2x"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/nature-icon-desktop.jpg    1x,
+                      img/nature-icon-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/nature-icon-tablet.jpg    1x,
+                      img/nature-icon-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/nature-icon.jpg"
+                    srcset="img/nature-icon@2x.jpg 2x"
+                    class="photo-block__nature"
+                    width="280"
+                    height="280"
+                    alt="Фотография местной растительности."
+                  />
+                </picture>
+              </a>
               <div class="photo-block__line-short">
                 <div class="photo-block__line-block">
                   <h2 class="photo-block__list-title">
@@ -195,106 +203,112 @@
               </div>
             </li>
             <li class="photo-block__item-short">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/forest-icon-desktop.webp    1x,
-                    img/forest-icon-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/forest-icon-tablet.webp    1x,
-                    img/forest-icon-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/forest-icon.webp 1x, img/forest-icon@2x.webp 2x"
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/forest-icon-desktop.jpg    1x,
-                    img/forest-icon-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/forest-icon-tablet.jpg    1x,
-                    img/forest-icon-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/forest-icon.jpg 1x, img/forest-icon@2x.jpg 2x"
-                  class="photo-block__road"
-                  width="280"
-                  height="280"
-                  alt="Фотография дороги на север."
-                />
-              </picture>
+              <a href="#" class="photo-block__photo-link">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/forest-icon-desktop.webp    1x,
+                      img/forest-icon-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/forest-icon-tablet.webp    1x,
+                      img/forest-icon-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/forest-icon.webp 1x, img/forest-icon@2x.webp 2x"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/forest-icon-desktop.jpg    1x,
+                      img/forest-icon-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/forest-icon-tablet.jpg    1x,
+                      img/forest-icon-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/forest-icon.jpg"
+                    srcset="img/forest-icon@2x.jpg 2x"
+                    class="photo-block__road"
+                    width="280"
+                    height="280"
+                    alt="Фотография дороги на север."
+                  />
+                </picture>
+              </a>
               <div class="photo-block__line-short">
                 <div class="photo-block__line-block">
                   <h2 class="photo-block__list-title">Дорога на север</h2>
                   <p class="photo-block__list-text">Автор фото: Петр</p>
                 </div>
-                <button type="button" class="photo-block__list-button">
+                <button type="button" class="photo-block__list-button-short">
                   <span class="photo-block__like-two">96</span>
                 </button>
               </div>
             </li>
             <li class="photo-block__item-short">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/mountain-icon-desktop.webp    1x,
-                    img/mountain-icon-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/mountain-icon-tablet.webp    1x,
-                    img/mountain-icon-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/mountain-icon.webp    1x,
-                    img/mountain-icon@2x.webp 2x
-                  "
-                />
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/mountain-icon-desktop.jpg    1x,
-                    img/mountain-icon-desktop@2x.jpg 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/mountain-icon-tablet.jpg    1x,
-                    img/mountain-icon-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  src="img/mountain-icon.jpg 1x, img/mountain-icon@2x.jpg 2x"
-                  class="photo-block__bridge"
-                  width="280"
-                  height="280"
-                  alt="Фотография моста дъявола."
-                />
-              </picture>
+              <a href="#" class="photo-block__photo-link">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/mountain-icon-desktop.webp    1x,
+                      img/mountain-icon-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/mountain-icon-tablet.webp    1x,
+                      img/mountain-icon-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/mountain-icon.webp    1x,
+                      img/mountain-icon@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/mountain-icon-desktop.jpg    1x,
+                      img/mountain-icon-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/mountain-icon-tablet.jpg    1x,
+                      img/mountain-icon-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="img/mountain-icon.jpg"
+                    srcset="img/mountain-icon@2x.jpg 2x"
+                    class="photo-block__bridge"
+                    width="280"
+                    height="280"
+                    alt="Фотография моста дъявола."
+                  />
+                </picture>
+              </a>
               <div class="photo-block__line-short">
                 <div class="photo-block__line-block">
                   <h2 class="photo-block__list-title">Мост дьявола</h2>
@@ -356,14 +370,15 @@
         >
           <p class="footer__logo-text">Разработано</p>
           <svg
-            title="htmlacademy"
             width="29"
             height="35"
             viewBox="0 0 29 35"
             class="footer__htmlacademy-logo"
             xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Логотип htmlacademy."
           >
-            <use xlink:href="#htmlacademy-logo"></use>
+            <use href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
       </footer>
