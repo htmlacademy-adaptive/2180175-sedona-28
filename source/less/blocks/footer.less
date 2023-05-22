@@ -3,6 +3,20 @@
   width: 320px;
   background-color: #ffffff;
   padding: 36px 82px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 120px;
+    width: 768px;
+    background-color: #ffffff;
+    padding: 31px 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 31px 120px 36px 120px;
+  }
 }
 
 .footer__hashtag {
@@ -15,14 +29,48 @@
   display: flex;
   justify-content: center;
   margin: 0 0 30px 0;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    color: #098bf4;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 11px 114px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 136px;
+    min-height: 42px;
+    word-break: break-word;
+    margin: 11px 272px 0 0;
+  }
 }
 
 .footer__line {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  width: 156px;
+  min-height: 55px;
   gap: 6px;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 22px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 112px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: -2px 15px 0 0;
+  }
 }
 
 .footer__line-item {
@@ -55,12 +103,47 @@
   display: block;
   background-image: url("../../img/youtube-icon.svg");
   background-repeat: no-repeat;
-  background-position: 12px;
+  background-position: 13px;
 }
 
 .footer__logo-block {
   margin-left: 96px - 82px;
   display: flex;
+  flex-wrap: wrap;
+  width: 130px;
+  min-height: 53px;
+  word-break: break-word;
+  text-decoration: none;
+
+  &:hover .footer__logo-text {
+    color: #81b3d2;
+  }
+
+  &:hover .footer__htmlacademy-logo {
+    fill: #81b3d2;
+  }
+
+  &:active .footer__logo-text {
+    color: #b3b3b3;
+  }
+
+  &:active .footer__htmlacademy-logo {
+    fill: #b3b3b3;
+  }
+
+  &:focus {
+    outline: 1px solid #000000;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    display: flex;
+    padding-top: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 250px;
+  }
 }
 
 .footer__logo-text {
@@ -68,4 +151,11 @@
   color: #000000;
   margin: 0 12px 0 0;
   padding-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 11px 0 1px;
+    padding-top: 7px;
+  }
 }
