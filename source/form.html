@@ -57,8 +57,6 @@
               height="39"
               class="feedback-block__sedona-text"
               viewBox="0 0 229 39"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
               role="img"
               aria-label="Седона."
             >
@@ -69,10 +67,6 @@
               height="57"
               class="feedback-block__image-line"
               viewBox="0 0 1200 57"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Белая линия."
             >
               <use href="img/sprite.svg#white-line"></use>
             </svg>
@@ -306,7 +300,6 @@
             height="35"
             viewBox="0 0 29 35"
             class="footer__htmlacademy-logo"
-            xmlns="http://www.w3.org/2000/svg"
             role="img"
             aria-label="Логотип htmlacademy."
           >
@@ -317,34 +310,38 @@
     </div>
 
     <!--Окно ошибки-->
-    <div class="modal__container">
-      <section class="modal modal--error">
-        <div class="modal__block-error">
-          <h3 class="modal__title-error">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-          <p class="modal__text-error">
-            Проверьте поля, выделенные<br class="modal__mobile-br" />
-            красным, скорее всего вы<br class="modal__mobile-br" />
+    <div class="modal-container">
+      <section class="modal-container__modal modal-container__modal--error">
+        <div class="modal-container__block-error">
+          <h3 class="modal-container__title-error">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+          <p class="modal-container__text-error">
+            Проверьте поля, выделенные<br class="modal-container__mobile-br" />
+            красным, скорее всего вы<br class="modal-container__mobile-br" />
             забыли их заполнить
           </p>
         </div>
-        <button type="button" class="modal__button-error button">OK</button>
+        <button type="button" class="modal-container__button-error button">
+          OK
+        </button>
       </section>
     </div>
 
     <!--Окно успешного отправления отзыва-->
-    <div class="modal__container">
-      <div class="modal">
-        <div class="modal__block">
-          <p class="modal__title">Ваш отзыв отправлен!</p>
-          <p class="modal__text">
-            Спасибо за ваше участие, ваш<br class="modal__mobile-br" />
+    <div class="modal-container">
+      <div class="modal-container__modal">
+        <div class="modal-container__block">
+          <p class="modal-container__title">Ваш отзыв отправлен!</p>
+          <p class="modal-container__text">
+            Спасибо за ваше участие, ваш<br
+              class="modal-container__mobile-br"
+            />
             отзыв уже поступил к нам.<br />
-            В ближайшее время мы<br class="modal__mobile-br" />
+            В ближайшее время мы<br class="modal-container__mobile-br" />
             опубликуем его на сайте.
           </p>
         </div>
-        <div class="modal__button-background">
-          <button type="button" class="modal__button button">
+        <div class="modal-container__button-background">
+          <button type="button" class="modal-container__button button">
             ЗАкРЫТЬ ОКНО
           </button>
         </div>
