@@ -30,6 +30,92 @@
   }
 }
 
+.info-block__meet-lines {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: -228px;
+    top: -27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.info-block__contacts-lines {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: -279px;
+    top: -27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.info-block__emotion-lines {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: -268px;
+    top: -27px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 123px;
+      background-color: #dbdbdb;
+      left: -449px;
+      top: 13px;
+    }
+
+    &::after {
+      width: 123px;
+      background-color: #dbdbdb;
+      right: -200px;
+      top: 13px;
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 280px;
+      left: -605px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -355px;
+    }
+  }
+}
+
 .info-block__title-line {
   font-weight: 700;
   font-size: 18px;
@@ -41,42 +127,55 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     margin-bottom: 28px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-      left: 0;
-      top: 10px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-      right: 0;
-      top: 10px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto 43px auto;
     width: 276px;
+  }
+}
 
+.info-block__radio-lines {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: -277px;
+    top: -27px;
+  }
+
+  @media (min-width: @tablet-width) {
     &::before {
-      content: "";
-      width: 280px;
-      top: 11px;
+      width: 123px;
+      background-color: #dbdbdb;
+      left: -460px;
+      top: 13px;
     }
 
     &::after {
       content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      right: -189px;
+      top: 13px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
       width: 280px;
-      top: 11px;
+      left: -616px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -344px;
     }
   }
 }
@@ -91,27 +190,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    margin: 0 0 28px -9px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-      left: 0;
-      top: 25px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
-      right: 15px;
-      top: 25px;
-    }
+    margin: 0 auto 28px auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -140,6 +219,51 @@
   }
 }
 
+.info-block__checkbox-lines {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    left: -278px;
+    top: -53px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      width: 123px;
+      background-color: #dbdbdb;
+      left: -460px;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      right: -188px;
+      top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      width: 280px;
+      left: -616px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -344px;
+    }
+  }
+}
+
 .info-block__text {
   font-weight: 700;
   font-size: 18px;
@@ -156,7 +280,11 @@
   background-color: #e6e6e6;
   background-image: url("../../img/phone-sedona.svg");
   background-repeat: no-repeat;
-  background-position: 20px;
+  background-position: 20px 19px;
+
+  @media (min-width: @desktop-width) {
+    background-position: 19px 21px;
+  }
 }
 
 .info-block__background-image-second {
@@ -165,7 +293,11 @@
   background-color: #e6e6e6;
   background-image: url("../../img/mail.svg");
   background-repeat: no-repeat;
-  background-position: 21px 21px;
+  background-position: 21px 23px;
+
+  @media (min-width: @desktop-width) {
+    background-position: 20px 24px;
+  }
 }
 
 .info-block__control {
@@ -228,6 +360,7 @@
 
   @media (min-width: @desktop-width) {
     width: 372px;
+    padding: 16px 0 15px 15px;
   }
 }
 
@@ -249,7 +382,7 @@
     width: 648px;
     min-height: 162px;
     padding: 0 0 0 0;
-    margin: 0 0 47px 60px;
+    margin: 0 0 48px 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -266,10 +399,10 @@
   padding: 0 20px 0 20px;
 
   @media (min-width: @tablet-width) {
-    width: 648px;
+    width: 100%;
     min-height: 162px;
-    padding: 0 0 0 0;
-    margin: 0 0 26px 60px;
+    padding: 0;
+    margin: 0 0 26px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -281,11 +414,11 @@
 
 .info-block__emotions-feedback {
   border: none;
-  padding: 0 21px 0 20px;
+  padding: 0 19px 0 20px;
   margin: 0 0 3px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 70px 0;
+    margin: 0 0 53px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -310,7 +443,7 @@
   margin: 0 0 3px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 41px;
+    margin: 0 0 0 40px;
     width: 324px;
   }
 
@@ -352,6 +485,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 1px 0 0 84px;
+    padding: 0 39px 0 61px;
   }
 
   @media (min-width: @desktop-width) {
@@ -439,7 +573,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 16px;
+  padding: 15px 145px 15px 16px;
   margin: 0 0 16px 0;
   color: rgba(0, 0, 0, 0.3);
 
@@ -449,6 +583,7 @@
 
   @media (min-width: @desktop-width) {
     width: 430px;
+    padding: 17px 145px 14px 15px;
   }
 }
 
@@ -469,13 +604,13 @@
 .info-block__info-fieldset {
   border: none;
   padding: 0 20px 0 20px;
-  margin: 0 0 39px 0;
+  margin: 0 0 45px 0;
 
   @media (min-width: @tablet-width) {
     width: 295px;
     min-height: 228px;
     padding: 0 0 0 0;
-    margin: 55px 0 0 57px;
+    margin: 55px 0 0 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -494,7 +629,7 @@
     position: relative;
     width: 290px;
     padding: 0 0 0 0;
-    margin: 56px 0 0 61px;
+    margin: 55px 0 0 60px;
     min-height: 323px;
 
     &::before {
@@ -525,20 +660,23 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
-  margin: 0 0 0 141px;
+  margin: 0 0 0 139px;
   word-break: break-word;
-  width: 140px;
+  width: 142px;
   display: block;
+  padding: 0 0 0 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
-    margin: 0 0 0 160px;
+    margin: 0 0 0 161px;
     width: 163px;
+    text-align: right;
+    padding: 23px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 0 225px;
-    padding: 22px 0 0 0;
+    margin: 0 0 0 221px;
+    padding: 23px 0 0;
   }
 }
 
@@ -560,6 +698,7 @@
 
   @media (min-width: @desktop-width) {
     width: 372px;
+    padding: 18px 0 15px 15px;
   }
 }
 
@@ -596,7 +735,7 @@
   @media (min-width: @desktop-width) {
     width: 768px;
     height: 160px;
-    margin: 0 auto 48px;
+    margin: 0 auto 49px;
     padding: 18px 18px 18px 16px;
   }
 }
@@ -612,7 +751,7 @@
 .info-block__form-line {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 /* Checkbox */
@@ -635,7 +774,7 @@
     content: "";
     height: 16px;
     width: 22px;
-    top: 15px;
+    top: 17px;
     left: 12px;
   }
 }

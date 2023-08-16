@@ -101,15 +101,16 @@
 
 .header__nav-item {
   &:hover .header__nav-link {
-    color: #81b3d2;
+    background-color: #669ec0;
   }
 
   &:hover .header__nav-link-last {
-    color: #81b3d2;
+    background-color: #669ec0;
   }
 
   &:active .header__nav-link {
-    opacity: 0.3;
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:active .header__nav-link-last {
@@ -125,6 +126,32 @@
   }
 
   @media (min-width: @tablet-width) {
+    &:hover .header__nav-link {
+      color: #81b3d2;
+      background-color: #ffffff;
+    }
+
+    &:hover .header__nav-link-last {
+      color: #81b3d2;
+      background-color: #ffffff;
+    }
+
+    &:active .header__nav-link {
+      opacity: 0.3;
+    }
+
+    &:active .header__nav-link-last {
+      opacity: 0.3;
+    }
+
+    &:focus .header__nav-link {
+      color: #098bf4;
+    }
+
+    &:focus .header__nav-link-last {
+      color: #098bf4;
+    }
+
     &:nth-child(4n + 3) {
       margin-left: 153px;
     }
@@ -299,7 +326,7 @@
 .header-nav--opened .header__button {
   background-image: url("../../img/icon-cross.svg");
   background-repeat: no-repeat;
-  background-color: #81b3d2;
+  background-color: inherit;
   opacity: 1;
 
   &:hover {
