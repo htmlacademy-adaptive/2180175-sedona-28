@@ -26,7 +26,7 @@
   }
 
   &:focus {
-    border: 1px solid #000000;
+    outline: 1px solid #000000;
   }
 
   @media (min-width: @tablet-width) {
@@ -67,6 +67,10 @@
     min-height: 56px;
     background-color: #ffffff;
     z-index: 0;
+
+    &--nojs {
+      padding-top: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -101,15 +105,16 @@
 
 .header__nav-item {
   &:hover .header__nav-link {
-    color: #81b3d2;
+    background-color: #669ec0;
   }
 
   &:hover .header__nav-link-last {
-    color: #81b3d2;
+    background-color: #669ec0;
   }
 
   &:active .header__nav-link {
-    opacity: 0.3;
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:active .header__nav-link-last {
@@ -125,6 +130,32 @@
   }
 
   @media (min-width: @tablet-width) {
+    &:hover .header__nav-link {
+      color: #81b3d2;
+      background-color: #ffffff;
+    }
+
+    &:hover .header__nav-link-last {
+      color: #81b3d2;
+      background-color: #ffffff;
+    }
+
+    &:active .header__nav-link {
+      opacity: 0.3;
+    }
+
+    &:active .header__nav-link-last {
+      opacity: 0.3;
+    }
+
+    &:focus .header__nav-link {
+      color: #098bf4;
+    }
+
+    &:focus .header__nav-link-last {
+      color: #098bf4;
+    }
+
     &:nth-child(4n + 3) {
       margin-left: 153px;
     }
@@ -299,7 +330,7 @@
 .header-nav--opened .header__button {
   background-image: url("../../img/icon-cross.svg");
   background-repeat: no-repeat;
-  background-color: #81b3d2;
+  background-color: inherit;
   opacity: 1;
 
   &:hover {
@@ -309,17 +340,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.header-nav--closed .header__button::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
 .header-nav--closed .header__button:active::before {
@@ -332,16 +352,6 @@
 }
 
 .header-nav--opened {
-  display: block;
-}
-
-//nojs
-
-.header__nav--nojs .header__button {
-  display: none;
-}
-
-.header__nav--nojs .header__nav-list {
   display: block;
 }
 

@@ -98,26 +98,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__item-color:nth-child(2) .advantages__slogan-line {
-    position: relative;
-    text-transform: uppercase;
-    width: 165px;
-    margin: 0 0 0 12px;
-    text-align: center;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .advantages__item-color:nth-child(2) .advantages__slogan-line {
-    position: relative;
-    text-transform: uppercase;
-    width: 275px;
-    margin: 0 0 0 12px;
-    text-align: center;
-  }
-}
-
 .advantages__line {
   display: block;
   width: 284px;
@@ -126,15 +106,52 @@
 }
 
 .advantages__item-color {
-  padding: 23px 18px 28px;
+  padding: 20px 18px 28px 18px;
   min-height: 170px;
   background-color: #eeeeee;
+  position: relative;
+
+  &:nth-child(3) {
+    padding: 25px 18px 28px 18px;
+    margin: 2px 0 0 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 284px;
+      height: 1px;
+      background-color: #d6d6d6;
+      bottom: 5px;
+      left: 18px;
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 284px;
+      height: 1px;
+      background-color: #d6d6d6;
+      bottom: 8px;
+      left: 18px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
-    padding: 40px 33px 43px 33px;
+    padding: 42px 33px 42px 33px;
     background-color: #eeeeee;
+
+    &:nth-child(3) {
+      margin: 0;
+      padding: 42px 33px 42px 33px;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -142,19 +159,24 @@
     min-height: 256px;
     padding: 52px 50px;
     background-color: #eeeeee;
+
+    &:nth-child(3) {
+      padding: 52px 50px;
+    }
   }
 }
 
 .advantages__item-color-last {
   padding: 18px 18px 0 18px;
-  min-height: 170px;
+  min-height: 162px;
   background-color: #eeeeee;
-  margin-bottom: 33px;
+  margin-bottom: 39px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
-    padding: 41px 33px 63px 33px;
+    padding: 42px 33px 63px 33px;
     background-color: #eeeeee;
     margin: 0;
   }
@@ -171,11 +193,23 @@
   display: flex;
   flex-wrap: wrap;
 
+  &:nth-child(2) {
+    margin-bottom: 1px;
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
     width: 256px;
     min-height: 331px;
-    padding: 60px 33px;
+    padding: 62px 33px 50px 33px;
+
+    &:nth-child(2) {
+      margin: 0;
+    }
+
+    &:nth-child(3) {
+      padding: 62px 33px 50px 32px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -183,11 +217,11 @@
     width: 400px;
     min-height: 330px;
     padding: 69px 50px 47px 50px;
-  }
-}
 
-.advantages__item-image:nth-child(2) {
-  margin-bottom: 1px;
+    &:nth-child(3) {
+      padding: 69px 50px 50px 50px;
+    }
+  }
 }
 
 .advantages__icon {
@@ -221,13 +255,12 @@
 
   @media (min-width: @tablet-width) {
     width: 512px;
-    height: 256px;
+    height: 100%;
     object-fit: cover;
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
-    height: 256px;
   }
 }
 
@@ -238,7 +271,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 58px 0;
+    margin: 0 0 60px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -260,7 +293,7 @@
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    margin: 0 0 25px 0;
+    margin: 0 0 23px 0;
     width: 190px;
     text-align: center;
   }
@@ -328,9 +361,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 80px;
-    height: 74px;
-    margin: 0 0 22px 110px;
+    display: none;
+  }
+}
+
+.advantages__item-gift-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin: 0 0 27px 109px;
   }
 }
 
@@ -385,14 +425,14 @@
   min-height: 191px;
   background-color: #81b3d2;
   color: #ffffff;
-  padding: 35px 18px 12px 19px;
+  padding: 38px 18px 12px 18px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
     min-height: 256px;
     background-color: #81b3d2;
     color: #ffffff;
-    padding: 51px 33px 31px 33px;
+    padding: 54px 33px 30px 33px;
     order: 1;
   }
 
@@ -411,13 +451,14 @@
   padding: 70px 19px 40px 18px;
   background-image: url("../../img/white-blue.svg");
   background-repeat: no-repeat;
+  background-size: 320px 38px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    min-height: 256px;
+    min-height: 255px;
     background-color: #81b3d2;
     color: #ffffff;
-    padding: 55px 33px 31px 34px;
+    padding: 54px 33px 28px 34px;
     background-image: none;
     background-repeat: no-repeat;
   }
