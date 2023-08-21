@@ -30,24 +30,6 @@
   }
 }
 
-.info-block__meet-lines {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 1px;
-    background-color: #e5e5e5;
-    left: -228px;
-    top: -27px;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-
 .info-block__contacts-lines {
   position: relative;
 
@@ -626,11 +608,11 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    position: relative;
     width: 290px;
     padding: 0 0 0 0;
     margin: 55px 0 0 60px;
     min-height: 323px;
+    position: relative;
 
     &::before {
       content: "";
