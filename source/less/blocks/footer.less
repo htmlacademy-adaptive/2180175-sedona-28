@@ -1,12 +1,10 @@
 .footer {
-  min-height: 235px;
-  width: 320px;
   background-color: #ffffff;
   padding: 36px 82px 12px 82px;
+  flex-grow: 0;
+  flex-shrink: 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 120px;
-    width: 768px;
     background-color: #ffffff;
     padding: 30px 58px 30px 60px;
     display: flex;
@@ -14,7 +12,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
     padding: 31px 118px 36px 120px;
   }
 }
@@ -123,7 +120,7 @@
   }
 
   &:hover .footer__htmlacademy-logo {
-    fill: #81b3d2;
+    color: #81b3d2;
   }
 
   &:active .footer__logo-text {
@@ -131,7 +128,7 @@
   }
 
   &:active .footer__htmlacademy-logo {
-    fill: #b3b3b3;
+    color: #b3b3b3;
   }
 
   &:focus {
@@ -161,4 +158,8 @@
     color: #000000;
     padding: 9px 0 0 0;
   }
+}
+
+.footer__htmlacademy-logo {
+  color: #000000;
 }
