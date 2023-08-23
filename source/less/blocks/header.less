@@ -3,6 +3,8 @@
   min-height: 56px;
   position: relative;
   padding: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
 
   &--nojs .header__logo {
     position: initial;
@@ -18,6 +20,10 @@
 
   &--nojs .header__nav .header__nav-list {
     display: block;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
   }
 
   &--nojs .header__nav .header__button {
@@ -34,6 +40,7 @@
 .header__logo {
   position: absolute;
   left: 67px;
+  right: 67px;
   top: 0;
   z-index: 1;
 
@@ -52,14 +59,21 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     left: 38%;
+    right: 38%;
     z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     left: 507px;
+    right: 507px;
     z-index: 1;
   }
+}
+
+.header__logo-image {
+  width: 185px;
+  height: 96px;
 }
 
 //navigation

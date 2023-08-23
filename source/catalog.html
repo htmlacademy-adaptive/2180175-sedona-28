@@ -4,12 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="preload"
-      href="fonts/ptsans.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
@@ -51,7 +47,7 @@
       </header>
       <main class="catalog-main">
         <section class="photo-block">
-          <div class="photo-block__background-image">
+          <div class="photo-block__image-block">
             <svg
               width="229"
               height="39"
@@ -62,6 +58,50 @@
             >
               <use href="img/sprite.svg#sedona"></use>
             </svg>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/background-form-desktop.webp    1x,
+                  img/background-form-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/background-form-tablet.webp    1x,
+                  img/background-form-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="img/background-form.webp 1x, img/background-form@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/background-form-desktop.jpg    1x,
+                  img/background-form-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/background-form-tablet.jpg    1x,
+                  img/background-form-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/background-form.jpg"
+                srcset="img/background-form@2x.jpg 2x"
+                class="photo-block__image"
+                width="320"
+                height="158"
+                alt="Фото гор."
+              />
+            </picture>
             <svg
               width="1200"
               height="57"
@@ -133,6 +173,7 @@
                 </div>
                 <button type="button" class="photo-block__list-button">
                   <span class="photo-block__like-four">1350</span>
+                  <span class="visually-hidden">Кнопка - "лайк"</span>
                 </button>
               </div>
             </li>
@@ -193,6 +234,7 @@
                 </div>
                 <button type="button" class="photo-block__list-button">
                   <span class="photo-block__like-three">143</span>
+                  <span class="visually-hidden">Кнопка - "лайк"</span>
                 </button>
               </div>
             </li>
@@ -250,6 +292,7 @@
                 </div>
                 <button type="button" class="photo-block__list-button-short">
                   <span class="photo-block__like-two">96</span>
+                  <span class="visually-hidden">Кнопка - "лайк"</span>
                 </button>
               </div>
             </li>
@@ -310,6 +353,7 @@
                 </div>
                 <button type="button" class="photo-block__list-button">
                   <span class="photo-block__like-three">254</span>
+                  <span class="visually-hidden">Кнопка - "лайк"</span>
                 </button>
               </div>
             </li>
@@ -324,13 +368,8 @@
             </p>
           </div>
           <div class="demonstration-block__video">
-            <img
-              src="img/play-icon.svg"
-              class="demonstration-block__play-icon"
-              width="48"
-              height="54"
-              alt="Иконка play"
-            />
+            <button class="demonstration-block__button" type="button">
+          </button>
           </div>
         </section>
       </main>

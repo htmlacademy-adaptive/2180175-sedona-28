@@ -5,6 +5,13 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -29,15 +36,16 @@ body {
   max-width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     max-width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);

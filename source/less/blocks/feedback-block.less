@@ -2,63 +2,56 @@
   margin: 0 0 53px 0;
 }
 
-.feedback-block__background-image {
+.feedback-block__block-image {
   position: relative;
-  height: 158px;
-  background-image: url("../../img/background-form.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% -55px;
-  padding: 52px 46px 67px 46px;
   overflow: hidden;
+}
 
+.feedback-block__image {
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/background-form-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% -56px;
-    height: 289px;
     width: 768px;
-    overflow: hidden;
-    padding: 95px 154px 118px 157px;
+    height: 290px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/background-form-desktop.jpg");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 302px;
-    overflow: hidden;
-    padding: 101px 372px 120px 369px;
+    width: 1200px;
   }
 }
 
 .feedback-block__sedona-text {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+
   @media (min-width: @tablet-width) {
     width: 457px;
     height: 78px;
+    top: 95px;
+    left: 157px;
   }
 
   @media (min-width: @desktop-width) {
     width: 457px;
     height: 80px;
+    top: 101px;
+    left: 370px;
   }
 }
 
 .feedback-block__image-line {
   position: absolute;
   left: -137%;
-  bottom: 0;
+  bottom: 5px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    left: -216px;
-    bottom: -1px;
+    left: -28%;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     left: 0;
-    bottom: 1px;
+    bottom: -6px;
   }
 }
 
@@ -68,16 +61,16 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin: 37px 0 24px 0;
+  margin: 31px 0 24px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 26px;
-    margin: 65px 0 21px 0;
+    margin: 58px 0 21px 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 114px 0 0 0;
+    margin: 120px 0 0 0;
   }
 }
 
@@ -102,6 +95,10 @@
   @media (min-width: @tablet-width) {
     margin: 0 0 0 165px;
     width: 436px;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {

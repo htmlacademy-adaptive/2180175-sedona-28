@@ -4,12 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      rel="preload"
-      href="fonts/ptsans.woff2"
-      as="font"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
@@ -51,7 +47,7 @@
       </header>
       <main class="form-main">
         <section class="feedback-block">
-          <div class="feedback-block__background-image">
+          <div class="feedback-block__block-image">
             <svg
               width="229"
               height="39"
@@ -62,6 +58,50 @@
             >
               <use href="img/sprite.svg#sedona"></use>
             </svg>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/background-form-desktop.webp    1x,
+                  img/background-form-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/background-form-tablet.webp    1x,
+                  img/background-form-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="img/background-form.webp 1x, img/background-form@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  img/background-form-desktop.jpg    1x,
+                  img/background-form-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/background-form-tablet.jpg    1x,
+                  img/background-form-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                src="img/background-form.jpg"
+                srcset="img/background-form@2x.jpg 2x"
+                class="feedback-block__image"
+                width="320"
+                height="158"
+                alt="Фото гор."
+              />
+            </picture>
             <svg
               width="1200"
               height="57"
@@ -79,7 +119,7 @@
         </section>
         <section class="info-block">
           <h2 class="visually-hidden">Форма для заполнения данных</h2>
-          <form action="#" class="info-block__form">
+          <form action="https://echo.htmlacademy.ru/" method="post" class="info-block__form">
             <div class="info-block__line-form">
               <fieldset class="info-block__name-fieldset">
                 <legend class="info-block__title">
@@ -318,42 +358,26 @@
     </div>
 
     <!--Окно ошибки-->
-    <div class="modal-container">
-      <section class="modal-container__modal modal-container__modal--error">
-        <div class="modal-container__block-error">
-          <h3 class="modal-container__title-error">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-          <p class="modal-container__text-error">
-            Проверьте поля, выделенные<br class="modal-container__mobile-br" />
-            красным, скорее всего вы<br class="modal-container__mobile-br" />
-            забыли их заполнить
-          </p>
-        </div>
-        <button type="button" class="modal-container__button-error button">
-          OK
-        </button>
-      </section>
+    <div class="modal modal--error">
+      <div class="modal__block-error">
+        <h3 class="modal__block-title">ЧТО-ТО ПОШЛО <br class="modal__error-br"> НЕ ТАК!</h3>
+        <p class="modal__block-text-error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button type="button" class="modal__button-error button">ОК</button>
+      </div>
     </div>
 
     <!--Окно успешного отправления отзыва-->
-    <div class="modal-container">
-      <div class="modal-container__modal">
-        <div class="modal-container__block">
-          <p class="modal-container__title">Ваш отзыв отправлен!</p>
-          <p class="modal-container__text">
-            Спасибо за ваше участие, ваш<br
-              class="modal-container__mobile-br"
-            />
-            отзыв уже поступил к нам.<br />
-            В ближайшее время мы<br class="modal-container__mobile-br" />
-            опубликуем его на сайте.
-          </p>
-        </div>
-        <div class="modal-container__button-background">
-          <button type="button" class="modal-container__button button">
-            ЗАкРЫТЬ ОКНО
-          </button>
-        </div>
+    <div class="modal">
+      <div class="modal__block">
+        <h3 class="modal__block-title">Ваш отзыв отправлен!</h3>
+        <p class="modal__block-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          <br class="modal__br">В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="modal__extra-block">
+            <button type="button" class="modal__button button">ЗАкРЫТЬ ОКНО</button>
+          </div>
       </div>
+    </div>
+
     </div>
     <script src="js/script.min.js"></script>
   </body>
