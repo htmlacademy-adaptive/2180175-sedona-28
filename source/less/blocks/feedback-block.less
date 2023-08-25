@@ -1,13 +1,44 @@
-.feedback-block {
-  margin: 0 0 53px 0;
-}
-
 .feedback-block__block-image {
   position: relative;
   overflow: hidden;
+  min-height: 158px;
+  background-color: #000000;
+  background-image: url("../../img/background-form.jpg");
+  margin: 0 0 36px 0;
+  background-repeat: no-repeat;
+  background-position-y: -56px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background-form@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/background-form-tablet.jpg");
+    min-height: 290px;
+    background-size: 768px auto;
+    margin: 0 0 66px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-form-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/background-form-desktop.jpg");
+    background-size: 1200px auto;
+    min-height: 302px;
+    margin: 0 0 114px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background-form-desktop@2x.jpg");
+    }
+  }
 }
 
 .feedback-block__image {
+  object-fit: cover;
+
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 290px;
@@ -41,7 +72,7 @@
 .feedback-block__image-line {
   position: absolute;
   left: -137%;
-  bottom: 5px;
+  bottom: 0;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -51,7 +82,6 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     left: 0;
-    bottom: -6px;
   }
 }
 
@@ -61,16 +91,12 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin: 31px 0 24px 0;
+  margin: 0 0 24px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 26px;
-    margin: 58px 0 21px 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 120px 0 0 0;
+    margin: 0 0 18px 0;
   }
 }
 
@@ -78,9 +104,9 @@
   text-transform: uppercase;
   color: #333333;
   text-align: center;
-  margin: auto;
   width: 280px;
   position: relative;
+  margin: 0 auto 53px auto;
 
   &::before {
     content: "";
@@ -93,7 +119,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 165px;
+    margin: 0 0 53px 165px;
     width: 436px;
 
     &::before {
@@ -102,6 +128,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 32px 0 0 383px;
+    margin: 32px 0 53px 383px;
   }
 }
