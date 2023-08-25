@@ -16,11 +16,15 @@
 //block-error
 
 .modal__block-error {
+  position: fixed;
+  left: 50%;
+  top: 50%;
   width: 100%;
   min-height: 280px;
   background-color: #ffffff;
   padding: 45px 42px 35px 41px;
   box-shadow: 0 7px 15px 0 #00010126;
+  transform: translate(-50%, -50%);
 
 
   @media (min-width: @tablet-width) {
@@ -88,6 +92,10 @@
   min-height: 323px;
   background-color: #ffffff;
   padding: 39px 0 0 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
     width: 640px;
